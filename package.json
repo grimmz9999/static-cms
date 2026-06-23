@@ -4,6 +4,6 @@
     "build": "node tools/build-content.mjs && node tools/copy-decap-cms.mjs"
   },
   "dependencies": {
-    "decap-cms-app": "3.4.0"
+    "decap-cms": "3.4.0"
   }
 }

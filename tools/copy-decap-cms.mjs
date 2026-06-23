@@ -7,6 +7,6 @@ const destination = join(root, "admin", "decap-cms.js");
 
 await mkdir(dirname(destination), { recursive: true });
 await copyFile(
-  join(root, "node_modules", "decap-cms-app", "dist", "decap-cms.js"),
+  join(root, "node_modules", "decap-cms", "dist", "decap-cms.js"),
   destination
 );
