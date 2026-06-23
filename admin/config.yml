@@ -1,0 +1,235 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://YOUR-SITE.netlify.app
+display_url: https://YOUR-SITE.netlify.app
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: simple
+
+collections:
+  - name: site
+    label: Site settings
+    files:
+      - name: site
+        label: Homepage and global content
+        file: content/site.json
+        format: json
+        fields:
+          - label: Metadata
+            name: metadata
+            widget: object
+            fields:
+              - { label: Browser title, name: title, widget: string }
+              - { label: Search description, name: description, widget: text }
+          - label: Brand
+            name: brand
+            widget: object
+            fields:
+              - { label: Mark, name: mark, widget: string }
+              - { label: Lab name, name: name, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+          - label: Navigation
+            name: navigation
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Section link, name: href, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Description, name: text, widget: text }
+              - label: Buttons
+                name: actions
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Link, name: href, widget: string }
+                  - label: Style
+                    name: style
+                    widget: select
+                    options: [primary, secondary]
+          - label: Biography
+            name: bio
+            widget: object
+            fields:
+              - { label: Section label, name: kicker, widget: string }
+              - { label: Heading, name: heading, widget: string }
+              - { label: Portrait, name: portrait, widget: image }
+              - { label: Portrait alt text, name: portraitAlt, widget: string }
+              - { label: Paragraphs (Markdown), name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+              - label: Profile links
+                name: profiles
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: href, widget: string }
+              - { label: Education heading, name: educationHeading, widget: string }
+              - label: Education
+                name: education
+                widget: list
+                fields:
+                  - { label: Period, name: period, widget: string }
+                  - { label: Detail, name: detail, widget: string }
+          - label: Research heading
+            name: researchHeading
+            widget: object
+            fields:
+              - { label: Section label, name: kicker, widget: string }
+              - { label: Heading, name: title, widget: string }
+          - { label: Team heading, name: teamHeading, widget: string }
+          - label: Teaching
+            name: teaching
+            widget: object
+            fields:
+              - { label: Section label, name: kicker, widget: string }
+              - { label: Course title, name: title, widget: string }
+              - { label: Metadata, name: meta, widget: list, field: { label: Item, name: item, widget: string } }
+              - { label: Description, name: description, widget: text }
+              - { label: Course link label, name: linkLabel, widget: string }
+              - { label: Course URL, name: linkHref, widget: string }
+              - label: Featured image
+                name: feature
+                widget: object
+                fields:
+                  - { label: Image, name: src, widget: image }
+                  - { label: Alt text, name: alt, widget: string }
+                  - { label: Caption, name: caption, widget: string }
+              - label: Gallery images
+                name: gallery
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image }
+                  - { label: Alt text, name: alt, widget: string }
+                  - { label: Caption, name: caption, widget: string }
+          - label: Contact and opportunities
+            name: contact
+            widget: object
+            fields:
+              - { label: Heading, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Profile link label, name: profileLabel, widget: string }
+              - { label: Profile URL, name: profileHref, widget: string }
+              - { label: Opportunity label, name: positionLabel, widget: string }
+              - { label: Opportunity title, name: positionTitle, widget: string }
+              - { label: Opportunity summary, name: positionSummary, widget: text }
+              - { label: Guidance button label, name: guidanceLabel, widget: string }
+              - { label: Guidance heading, name: guidanceTitle, widget: string }
+              - { label: Guidance paragraphs (Markdown), name: guidance, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Lab name, name: name, widget: string }
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: href, widget: string }
+  - name: research
+    label: Research areas
+    folder: content/research
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - { label: Display order, name: order, widget: number, value_type: int, min: 0 }
+      - { label: Slug, name: slug, widget: string, hint: "Lowercase words separated by hyphens." }
+      - { label: Title, name: title, widget: string }
+      - { label: Short title, name: shortTitle, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Description paragraphs (Markdown), name: description, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+      - { label: Keywords, name: keywords, widget: list, field: { label: Keyword, name: keyword, widget: string } }
+      - { label: Applications, name: applications, widget: text }
+      - { label: Main image, name: image, widget: image }
+      - { label: Main image alt text, name: imageAlt, widget: string }
+      - label: Detail examples
+        name: examples
+        widget: list
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body paragraphs (Markdown), name: body, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+          - { label: Bullet points (Markdown), name: bullets, widget: list, required: false, field: { label: Bullet, name: bullet, widget: markdown } }
+          - { label: Image, name: image, widget: image }
+          - { label: Image alt text, name: imageAlt, widget: string }
+  - name: team
+    label: Team members
+    folder: content/team
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: name
+    fields:
+      - { label: Display order, name: order, widget: number, value_type: int, min: 0 }
+      - { label: Name, name: name, widget: string }
+      - label: Group
+        name: group
+        widget: select
+        options: [current, alumni]
+      - { label: Role, name: role, widget: string }
+      - { label: Portrait, name: photo, widget: image }
+      - { label: Portrait alt text, name: photoAlt, widget: string }
+      - { label: Biography, name: bio, widget: markdown }
+      - { label: Research topics, name: topics, widget: list, field: { label: Topic, name: topic, widget: string } }
+      - label: Profile links
+        name: links
+        widget: list
+        fields:
+          - { label: Label, name: label, widget: string }
+          - { label: URL or email link, name: href, widget: string }
+  - name: publications
+    label: Publications and presentations
+    folder: content/publications
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - { label: Display order, name: order, widget: number, value_type: int, min: 0 }
+      - label: Collection
+        name: category
+        widget: select
+        options: [publications, conferences, dataset]
+      - { label: Year, name: year, widget: string }
+      - { label: Type label, name: type, widget: string }
+      - { label: Anchor ID, name: id, widget: string, required: false }
+      - { label: Title, name: title, widget: string }
+      - { label: Authors, name: authors, widget: string, required: false }
+      - { label: Venue, name: venue, widget: string, required: false }
+      - { label: Link, name: href, widget: string, required: false }
+      - { label: Date, name: date, widget: string, required: false }
+      - { label: Location, name: location, widget: string, required: false }
+      - { label: Award, name: award, widget: string, required: false }
+  - name: news
+    label: News
+    folder: content/news
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: dateLabel
+    fields:
+      - { label: Display order, name: order, widget: number, value_type: int, min: 0 }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Year, name: year, widget: string }
+      - { label: Date label, name: dateLabel, widget: string }
+      - { label: Summary (Markdown), name: summary, widget: markdown }
+      - { label: Detail heading, name: detailsTitle, widget: string, required: false }
+      - { label: Detail bullet points (Markdown), name: details, widget: list, required: false, field: { label: Detail, name: detail, widget: markdown } }
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Alt text, name: alt, widget: string }
+          - { label: Caption, name: caption, widget: string }

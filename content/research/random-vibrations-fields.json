@@ -1,0 +1,49 @@
+{
+  "slug": "random-vibrations-fields",
+  "title": "Random Vibrations and Random Fields",
+  "shortTitle": "Random Vibrations & Fields",
+  "summary": "Stochastic process and random field models for continuous uncertainty in hazards, response, and deterioration.",
+  "description": [
+    "Infinitely high-dimensional random variables are modeled as **random fields** or **processes**. In natural hazards engineering, we frequently encounter geospatially and temporally continuous randomness, necessitating methods to effectively model and propagate such uncertainty.",
+    "While high-dimensional uncertainty presents challenges (primarily computational limitations, but also informational limitations) the structured correlations inherent in these fields or processes allow for specialized treatment of uncertainties."
+  ],
+  "keywords": [
+    "Spectral representations",
+    "Karhunen-Loeve expansion",
+    "Equivalent linearization method",
+    "First passage probability"
+  ],
+  "applications": "Applications to earthquake risk assessment and material corrosion.",
+  "image": "assets/research/random-overview.png",
+  "imageAlt": "Random vibrations and random fields",
+  "examples": [
+    {
+      "title": "First-passage probability for random vibrations",
+      "image": "assets/research/random-first-passage.jpg",
+      "imageAlt": "First passage probability estimation using poisson branching model",
+      "body": [
+        "When a structural response is modeled as a random process, failure of the structure is often defined as **the probability of response exceeding a threshold** during a finite time period. Identifying such a probability, called first-passage probability, is both a challenging and intriguing problem. [[more](#j-fpp)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Equivalent linearization for nonlinear systems",
+      "image": "assets/research/random-linearization.png",
+      "imageAlt": "Gaussian mixture based equivalent linearization method",
+      "body": [
+        "**Equivalent linearization** is classical but powerful technique, as it allows us to leverage closed-form solutions, superposition principles, and other reliability analysis methods developed for linear(ized) systems. While classical linearization methods have well-known limitations in descriptive flexibility, modern linearization methods overcome the constraint while maintaining the computational benefits. [[more](#j-gmelm)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Finite representations of random fields",
+      "image": "assets/research/random-field-pca.png",
+      "imageAlt": "Random field Principal component analysis",
+      "body": [
+        "A random field model consists of infinitely many dimensions but can always be approximated by a finite set of random variables. If your field model is **well-structured** (e.g., exhibits slow correlation decay and is narrow-banded), the size of these random variables can be quite small. This **low-dimensional representation** is useful in surrogate modeling, reliability analysis, sensitivity analysis, Bayesian updating, and various other uncertainty quantification (UQ) methods."
+      ],
+      "bullets": []
+    }
+  ],
+  "order": 3
+}

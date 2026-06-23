@@ -1,0 +1,20 @@
+{
+  "year": "2026",
+  "dateLabel": "Feb 2026",
+  "summary": "Seonghyun Lim presented a poster at the 2026 Energy HPC & AI Conference.",
+  "images": [
+    {
+      "src": "assets/news/seonghyun-poster.jpg",
+      "alt": "Seonghyun presenting",
+      "caption": "Seonghyun presenting"
+    },
+    {
+      "src": "assets/news/seonghyun-taeha.jpg",
+      "alt": "Seonghyun and Taeha",
+      "caption": "Seonghyun and Taeha"
+    }
+  ],
+  "slug": "2026-feb-2026",
+  "order": 2,
+  "details": []
+}

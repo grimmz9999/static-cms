@@ -1,0 +1,64 @@
+{
+  "slug": "resilience-assessment",
+  "title": "System-Reliability-based Resilience Assessment",
+  "shortTitle": "Resilience Assessment",
+  "summary": "Reliability, redundancy, and recoverability frameworks for probability-informed infrastructure resilience decisions.",
+  "description": [
+    "**Resilience** represents a modern paradigm in disaster management. Unlike the traditional risk and performance approaches, resilience also considers the long-term impacts of disasters, the ease of recovery, and the interactions among components and subsystems of urban systems across multiple scales. Therefore, resilience is inherently an interdisciplinary topic.",
+    "Our group contributes to the resilience research community by providing a framework with strong **uncertainty quantification** **capabilities** that enable probability-informed decision-making."
+  ],
+  "keywords": [
+    "Reliability",
+    "Redundancy",
+    "Recoverability",
+    "System-reliability-based resilience analysis",
+    "Adaptive Sampling",
+    "Surrogate modeling"
+  ],
+  "applications": "Applications to earthquake and (local) fire hazard for structural systems.",
+  "image": "assets/research/resilience-overview.png",
+  "imageAlt": "Resilience analysis",
+  "examples": [
+    {
+      "title": "System-reliability-based resilience assessment",
+      "image": "assets/research/resilience-rrr.png",
+      "imageAlt": "Resilience, reliability, redundancy, and recoverability",
+      "body": [
+        "Resilience is evaluated using various measures such as robustness, rapidity, redundancy, and resourcefulness. Several definitions and algorithms exist for assessing resilience, and one of them is the **system reliability-based resilience assessment**. [[more](#j-resilience)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Failure paths across complex systems",
+      "image": "assets/research/resilience-reliability-redundancy.png",
+      "imageAlt": "Reliability and redundancy in resilience analysis",
+      "body": [
+        "A complex system like modern cities can have different system failure paths originating from different **possible initial disruption scenarios**. The system-reliability-based resilience analysis method evaluates the resilience of a complex system by decomposing:"
+      ],
+      "bullets": [
+        "How frequently each initial disruption may occur (**reliability**);",
+        "How likely the initial disruption is to lead to system failure (**redundancy**);",
+        "What are the socio-economic implications of the disruption scenario for the recovery process (**recoverability**)."
+      ]
+    },
+    {
+      "title": "Reliability, redundancy, and recoverability indices",
+      "image": "assets/research/resilience-system-analysis.png",
+      "imageAlt": "System reliability based resilience analysis",
+      "body": [
+        "Reliability, redundancy, and recoverability indices collectively provide a concise snapshot of the **criticality of different system failure modes** and inform engineering decision-making. [[more](#j-resilience)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Adaptive importance sampling and surrogate-aided reliability",
+      "image": "assets/research/resilience-importance-sampling.png",
+      "imageAlt": "Importance sampling and surrogate-aided reliability analysis",
+      "body": [
+        "The resilience analysis is based on numerous 'what-if' scenario analysis and therefore, computationally expensive in nature. To overcome the computational challenges, advanced reliability methods, like **adaptive importance sampling** or **surrogate-aided reliability analysis methods** can be revisited and further developed. [[more](#j-resilience-is)]"
+      ],
+      "bullets": []
+    }
+  ],
+  "order": 1
+}

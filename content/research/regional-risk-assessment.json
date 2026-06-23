@@ -1,0 +1,57 @@
+{
+  "slug": "regional-risk-assessment",
+  "title": "Regional Risk Assessment",
+  "shortTitle": "Regional Risk Assessment",
+  "summary": "Regional-scale UQ workflows for incomplete inventories, sparse hazards, sensitivity analysis, and resilience assessment.",
+  "description": [
+    "The recent trend toward **regional-scale risk and resilience assessments** presents both challenges and opportunities for existing uncertainty quantification (UQ) methods. New challenges include limited information (e.g., incomplete inventory or sparse hazard description), high-dimensional representations of system input-output, inter- and intra-system dependencies, decision-making under uncertainty and conflicting objectives, and significant computational memory and processing demands.",
+    "We are developing **advanced UQ methods** to overcome the computational limitations of current state-of-the-art approaches."
+  ],
+  "keywords": [
+    "Probabilistic imputation",
+    "Global Sensitivity analysis",
+    "Post-disaster impact analysis"
+  ],
+  "applications": "Applications to regional hurricane (for inventory imputation) and earthquake risk/resilience assessment.",
+  "image": "assets/research/regional-overview.png",
+  "imageAlt": "Regional Scale Uncertainty Quantification",
+  "examples": [
+    {
+      "title": "Open-source regional resilience workflows",
+      "image": "assets/research/regional-overview.png",
+      "imageAlt": "Regional Scale Uncertainty Quantification",
+      "body": [
+        "[**NHERI SimCenter**](https://simcenter.designsafe-ci.org/) (funded by NSF) provides excellent [software applications](https://simcenter.designsafe-ci.org/research-tools/r2dtool/) for regional resilience assessment and benchmark examples."
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Sensitivity analysis for large-scale risk",
+      "image": "assets/research/regional-sensitivity.png",
+      "imageAlt": "Reduced order model global sensitivity analysis",
+      "body": [
+        "The collection of datasets is an emerging challenge in large-scale risk analysis. To address this, we must first understand what information is truly needed and what is not. A systematic and probabilistic **sensitivity analysis** framework can offer valuable insights. [[more](#j-rom-sensitivity)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Probabilistic imputation for incomplete inventories",
+      "image": "assets/research/regional-imputation.png",
+      "imageAlt": "Missing data imputation for regional risk assessment",
+      "body": [
+        "Regional-scale analyses often rely on public data sources, which may be imperfect. To address these information gaps, **probabilistic imputation** techniques can be employed. When performing imputation, it is important to carefully assess the bias and uncertainty introduced and quantify their impact on downstream analyses."
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Interdisciplinary post-hazard recovery demand",
+      "image": "assets/research/regional-recovery-demand.png",
+      "imageAlt": "Post hazard recovery resource demand model",
+      "body": [
+        "Disaster management is inherently interdisciplinary. Civil engineers play a unique role of leveraging hazard source information to predict potential structural damages. However, it is crucial for us to also understand the important assumptions made in **upstream** of the workflow as well as the decision-making processes in **downstream**, seeking ways to better inform decision-makers. Interdisciplinary collaboration is becoming increasingly vital. [[more](#j-recovery)]"
+      ],
+      "bullets": []
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,17 @@
+{
+  "order": 0,
+  "name": "Dr. Seonghyun Lim",
+  "group": "current",
+  "role": "Postdoctoral Researcher",
+  "photo": "assets/team-seonghyun-lim.png",
+  "photoAlt": "Dr. Seonghyun Lim",
+  "bio": "Seonghyun is a postdoctoral researcher at Rice University. His research focuses on uncertainty quantification and stochastic modeling for seismic risk analysis and resilience assessment of complex infrastructure systems under extreme events.",
+  "topics": [
+    "Uncertainty quantification in natural hazards",
+    "System-level resilience assessment"
+  ],
+  "links": [
+    { "label": "Email", "href": "mailto:sl68@rice.edu" },
+    { "label": "Google Scholar", "href": "https://scholar.google.ca/citations?user=xd2oqD0AAAAJ&hl=en" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "year": "2026",
+  "dateLabel": "May 2026",
+  "summary": "Seonghyun Lim, Taeha Kim, and Sang-ri Yi presented at [EMI](https://www.emi-conference.org/). Sang-ri also presented at [ICCE](https://www.icce2026.com/) and [NHERI Computational Symposium](https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/).",
+  "detailsTitle": "Talks by our group members",
+  "details": [
+    "Seonghyun Lim (Postdoc): Adaptation of stochastic emulation to shift of distribution.",
+    "Taeha Kim (Visiting PhD student, SNU): Adaptive covariance selection for joint input-state estimation of hysteretic structures.",
+    "Sang-ri Yi: Stochastic emulation for seismic risk assessment using recorded ground motions; Characterizing debris fields and emulating impact intensity measures."
+  ],
+  "images": [
+    {
+      "src": "assets/news/taeha-presenting.jpg",
+      "alt": "Taeha presenting",
+      "caption": "Taeha presenting"
+    },
+    {
+      "src": "assets/news/seonghyun-presenting.jpg",
+      "alt": "Seonghyun presenting",
+      "caption": "Seonghyun presenting"
+    },
+    {
+      "src": "assets/news/emi-group.jpg",
+      "alt": "Group photo",
+      "caption": "with Larissa, Fei, and Ji-Eun"
+    }
+  ],
+  "slug": "2026-may-2026",
+  "order": 0
+}

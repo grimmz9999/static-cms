@@ -1,0 +1,51 @@
+{
+  "slug": "surrogate-modeling",
+  "title": "Surrogate Modeling",
+  "shortTitle": "Surrogate Modeling",
+  "summary": "Application-driven surrogate models for expensive simulations, risk assessment, optimization, and uncertainty-aware prediction.",
+  "description": [
+    "**Surrogate model** is a mathematical model that approximates and replaces the outcome of complex physics-based simulation model. Surrogate model is useful when you need to run simulations multiple times, e.g., for risk assessment or optimizations. **Scientific Machine learning** models can be used as a surrogate model, with the constraints of limited training data and the need for quantified uncertainty (epistemic and aleatoric) in the outputs.",
+    "We develop **application-driven surrogate models**, that sometimes push us to tackle emerging challenges related to large aleatory uncertainty, high-dimensionality, scalability, and limited computational resources."
+  ],
+  "keywords": [
+    "Stochastic emulations",
+    "Adaptive design of experiments",
+    "Sequential experimental design",
+    "Gaussian Process (GP) model",
+    "Dimension reduction"
+  ],
+  "applications": "Applications to earthquake, wind, (local) fire risk analysis and calibration of model parameters.",
+  "image": "assets/research/surrogate-overview.png",
+  "imageAlt": "Gaussian Process Surrogate Modeling",
+  "examples": [
+    {
+      "title": "Stochastic emulation for seismic response",
+      "image": "assets/research/surrogate-stochastic-emulation.png",
+      "imageAlt": "Stochastic Emulation for predicting seismic response of structures",
+      "body": [
+        "**Stochastic emulation** is a class of surrogate models capable of predicting a probability distribution of model responses, as opposed to a single deterministic value. The uncertainty captured by stochastic emulation is referred to as aleatoric uncertainty. Accurately predicting this uncertainty is challenging but essential in many engineering applications, including hazard risk assessment. [[more](#j-se1)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Adaptive and sequential design of experiments",
+      "image": "assets/research/surrogate-design-experiments.png",
+      "imageAlt": "Workflow of design of experiments",
+      "body": [
+        "When numerical simulation models are very expensive to run, generating a training dataset itself may require a prohibitive amount of computation. **Adaptive and sequential selection of training points** can help us reduce the number of simulations needed to train a surrogate model, often resulting in computational savings of 50-90%. However, selection of optimal training points is a **challenging optimization problem**.",
+        "Various strategies are developed to balance between computational efficiency, robustness, and effectiveness. [[more](#j-doe)]"
+      ],
+      "bullets": []
+    },
+    {
+      "title": "Exploration and exploitation in sequential design",
+      "image": "assets/research/surrogate-pareto.png",
+      "imageAlt": "Pareto front for design of experiments objective functions for surrogate modeling",
+      "body": [
+        "We can leverage the current training dataset to inform the **optimal selection of upcoming training points**. We want to generate more samples of unseen events that are distant from existing samples (\"exploration\"), but also want to generate samples close to the existing samples that showed higher unpredictability (\"exploitation\"). It is important to balance the two desired criteria. [[more](#j-doe)]"
+      ],
+      "bullets": []
+    }
+  ],
+  "order": 0
+}

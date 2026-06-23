@@ -1,0 +1,15 @@
+{
+  "year": "2026",
+  "dateLabel": "Mar 2026",
+  "summary": "Sang-ri Yi presented at [SIAM-UQ26](https://www.siam.org/conferences-events/siam-conferences/uq26/) at the University of Notre Dame.",
+  "images": [
+    {
+      "src": "assets/news/notre-dame-group.jpg",
+      "alt": "Sang-ri Yi with Dr. Taflanidis group",
+      "caption": "with Dr. Taflanidis' group"
+    }
+  ],
+  "slug": "2026-mar-2026",
+  "order": 1,
+  "details": []
+}
