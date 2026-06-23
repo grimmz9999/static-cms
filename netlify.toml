@@ -1,5 +1,5 @@
 [build]
-  command = "node tools/build-content.mjs"
+  command = "npm run build"
   publish = "."
 
 [build.processing]
