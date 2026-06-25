@@ -1,5 +1,6 @@
 (function () {
   const areas = window.RESEARCH_CONTENT || [];
+  const hiddenDrawers = window.HIDDEN_DRAWERS || [];
   const intro = window.RESEARCH_INTRO || {};
 
   const esc = (value) => String(value || "")
@@ -79,18 +80,42 @@
     `;
   };
 
-  const fullAreaHtml = (area) => `
-    <section class="research-full-area" id="${esc(area.slug)}">
-      <div class="research-full-header">
-        <h2>${esc(area.title)}</h2>
-        ${paragraphHtml(area.description)}
-        ${summaryMetaHtml(area)}
-      </div>
-      <div class="research-detail-grid">
-        ${area.examples.map(exampleHtml).join("")}
-      </div>
-    </section>
-  `;
+  const bulletListHtml = (items) => items?.length ? `<ul>${items.map((item) => `<li>${inlineHtml(item)}</li>`).join("")}</ul>` : "";
+
+
+  const legacyAreaHtml = (area) => {
+    const introParagraphs = area.paragraphs || [];
+    const beforeImage = introParagraphs.slice(0, Math.max(0, introParagraphs.length - 1));
+    const challengeIntro = introParagraphs[introParagraphs.length - 1];
+    return `
+      <section class="research-full-area legacy-drawer-page" id="${esc(area.slug)}">
+        ${paragraphHtml(beforeImage)}
+        ${area.image ? `<figure class="legacy-drawer-image"><img src="${esc(area.image)}" alt="${esc(area.imageAlt || area.title)}"></figure>` : ""}
+        ${challengeIntro ? `<p>${inlineHtml(challengeIntro)}</p>` : ""}
+        ${bulletListHtml(area.challengeBullets)}
+        <h3>${esc(area.researchHeading || "Research Areas")}</h3>
+        ${area.researchIntro ? `<p>${inlineHtml(area.researchIntro)}</p>` : ""}
+        ${bulletListHtml(area.researchBullets)}
+        ${area.closingText ? `<p>${inlineHtml(area.closingText)}</p>` : ""}
+      </section>
+    `;
+  };
+
+  const fullAreaHtml = (area) => {
+    if (area.layout === "legacy-page") return legacyAreaHtml(area);
+    return `
+      <section class="research-full-area" id="${esc(area.slug)}">
+        <div class="research-full-header">
+          <h2>${esc(area.title)}</h2>
+          ${paragraphHtml(area.description)}
+          ${summaryMetaHtml(area)}
+        </div>
+        <div class="research-detail-grid">
+          ${area.examples.map(exampleHtml).join("")}
+        </div>
+      </section>
+    `;
+  };
 
   const renderAccordion = (root) => {
     root.innerHTML = `
@@ -199,7 +224,7 @@
     const lightboxImage = lightbox.querySelector("img");
     const lightboxCaption = lightbox.querySelector("figcaption");
     const openDrawer = (slug) => {
-      const area = areas.find((item) => item.slug === slug);
+      const area = [...areas, ...hiddenDrawers].find((item) => item.slug === slug);
       if (!area) return;
       drawerContent.innerHTML = fullAreaHtml(area);
       drawer.setAttribute("aria-hidden", "false");
@@ -227,6 +252,12 @@
     root.querySelectorAll("[data-research-open]").forEach((button) => {
       button.addEventListener("click", () => openDrawer(button.dataset.researchOpen));
     });
+    document.querySelectorAll("[data-hidden-drawer-open]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        openDrawer(link.dataset.hiddenDrawerOpen);
+      });
+    });
     root.querySelectorAll("[data-drawer-close]").forEach((button) => {
       button.addEventListener("click", closeDrawer);
     });
@@ -239,6 +270,14 @@
       }
     });
     root.addEventListener("click", (event) => {
+      const researchSectionLink = event.target.closest('a[href="#research"]');
+      if (researchSectionLink && root.contains(researchSectionLink)) {
+        event.preventDefault();
+        closeLightbox();
+        closeDrawer();
+        document.querySelector("#research")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
       const publicationLink = event.target.closest('a[href^="#j-"]');
       if (publicationLink && root.contains(publicationLink)) {
         closeLightbox();

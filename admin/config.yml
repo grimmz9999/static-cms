@@ -53,73 +53,20 @@ collections:
                     name: style
                     widget: select
                     options: [primary, secondary]
-          - label: Biography
-            name: bio
-            widget: object
-            fields:
-              - { label: Section label, name: kicker, widget: string }
-              - { label: Heading, name: heading, widget: string }
-              - { label: Portrait, name: portrait, widget: image }
-              - { label: Portrait alt text, name: portraitAlt, widget: string }
-              - { label: Paragraphs (Markdown), name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
-              - label: Profile links
-                name: profiles
-                widget: list
-                fields:
-                  - { label: Label, name: label, widget: string }
-                  - { label: URL, name: href, widget: string }
-              - { label: Education heading, name: educationHeading, widget: string }
-              - label: Education
-                name: education
-                widget: list
-                fields:
-                  - { label: Period, name: period, widget: string }
-                  - { label: Detail, name: detail, widget: string }
           - label: Research heading
             name: researchHeading
             widget: object
             fields:
               - { label: Section label, name: kicker, widget: string }
               - { label: Heading, name: title, widget: string }
+          - label: Research intro
+            name: researchIntro
+            widget: object
+            fields:
+              - { label: Internal title, name: title, widget: string }
+              - { label: Intro paragraphs (Markdown), name: body, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+              - { label: Source URL, name: sourceUrl, widget: string, required: false }
           - { label: Team heading, name: teamHeading, widget: string }
-          - label: Teaching
-            name: teaching
-            widget: object
-            fields:
-              - { label: Section label, name: kicker, widget: string }
-              - { label: Course title, name: title, widget: string }
-              - { label: Metadata, name: meta, widget: list, field: { label: Item, name: item, widget: string } }
-              - { label: Description, name: description, widget: text }
-              - { label: Course link label, name: linkLabel, widget: string }
-              - { label: Course URL, name: linkHref, widget: string }
-              - label: Featured image
-                name: feature
-                widget: object
-                fields:
-                  - { label: Image, name: src, widget: image }
-                  - { label: Alt text, name: alt, widget: string }
-                  - { label: Caption, name: caption, widget: string }
-              - label: Gallery images
-                name: gallery
-                widget: list
-                fields:
-                  - { label: Image, name: src, widget: image }
-                  - { label: Alt text, name: alt, widget: string }
-                  - { label: Caption, name: caption, widget: string }
-          - label: Contact and opportunities
-            name: contact
-            widget: object
-            fields:
-              - { label: Heading, name: title, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Profile link label, name: profileLabel, widget: string }
-              - { label: Profile URL, name: profileHref, widget: string }
-              - { label: Opportunity label, name: positionLabel, widget: string }
-              - { label: Opportunity title, name: positionTitle, widget: string }
-              - { label: Opportunity summary, name: positionSummary, widget: text }
-              - { label: Guidance button label, name: guidanceLabel, widget: string }
-              - { label: Guidance heading, name: guidanceTitle, widget: string }
-              - { label: Guidance paragraphs (Markdown), name: guidance, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
           - label: Footer
             name: footer
             widget: object
@@ -131,6 +78,107 @@ collections:
                 fields:
                   - { label: Label, name: label, widget: string }
                   - { label: URL, name: href, widget: string }
+  - name: bio
+    label: Biography
+    files:
+      - name: bio
+        label: Biography section
+        file: content/bio.json
+        format: json
+        fields:
+          - { label: Section label, name: kicker, widget: string }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Portrait, name: portrait, widget: image }
+          - { label: Portrait alt text, name: portraitAlt, widget: string }
+          - { label: Paragraphs (Markdown), name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+          - label: Profile links
+            name: profiles
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: href, widget: string }
+          - { label: Education heading, name: educationHeading, widget: string }
+          - label: Education
+            name: education
+            widget: list
+            fields:
+              - { label: Period, name: period, widget: string }
+              - { label: Detail, name: detail, widget: string }
+  - name: teaching
+    label: Teaching
+    files:
+      - name: teaching
+        label: Teaching section
+        file: content/teaching.json
+        format: json
+        fields:
+          - { label: Section label, name: kicker, widget: string }
+          - { label: Course title, name: title, widget: string }
+          - { label: Metadata, name: meta, widget: list, field: { label: Item, name: item, widget: string } }
+          - { label: Description, name: description, widget: text }
+          - { label: Course link label, name: linkLabel, widget: string }
+          - { label: Course URL, name: linkHref, widget: string }
+          - label: Featured image
+            name: feature
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt text, name: alt, widget: string }
+              - { label: Caption, name: caption, widget: string }
+          - label: Gallery images
+            name: gallery
+            widget: list
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt text, name: alt, widget: string }
+              - { label: Caption, name: caption, widget: string }
+  - name: contact
+    label: Contact us
+    files:
+      - name: contact
+        label: Contact section
+        file: content/contact.json
+        format: json
+        fields:
+          - { label: Heading, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Profile link label, name: profileLabel, widget: string }
+          - { label: Profile URL, name: profileHref, widget: string }
+          - { label: Opportunity label, name: positionLabel, widget: string }
+          - { label: Opportunity title, name: positionTitle, widget: string }
+          - { label: Opportunity summary, name: positionSummary, widget: text }
+          - { label: Guidance button label, name: guidanceLabel, widget: string }
+          - { label: Guidance heading, name: guidanceTitle, widget: string }
+          - { label: Guidance paragraphs (Markdown), name: guidance, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+  - name: hidden_drawers
+    label: Hidden drawers
+    folder: content/hidden-drawers
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    identifier_field: title
+    fields:
+      - { label: Display order, name: order, widget: number, value_type: int, min: 0 }
+      - { label: Slug, name: slug, widget: string, hint: "Lowercase words separated by hyphens. Used by hidden drawer trigger links." }
+      - { label: Title, name: title, widget: string }
+      - { label: Short title, name: shortTitle, widget: string }
+      - label: Layout
+        name: layout
+        widget: select
+        options: [legacy-page]
+        default: legacy-page
+      - { label: Summary, name: summary, widget: text }
+      - { label: Source URL, name: sourceUrl, widget: string, required: false }
+      - { label: Source label, name: sourceLabel, widget: string, required: false }
+      - { label: Intro paragraphs before image (Markdown), name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: markdown } }
+      - { label: Main image, name: image, widget: image, required: false }
+      - { label: Main image alt text, name: imageAlt, widget: string, required: false }
+      - { label: Challenge bullet points (Markdown), name: challengeBullets, widget: list, field: { label: Challenge, name: challenge, widget: markdown } }
+      - { label: Research areas heading, name: researchHeading, widget: string }
+      - { label: Research areas intro (Markdown), name: researchIntro, widget: markdown }
+      - { label: Research area bullet points (Markdown), name: researchBullets, widget: list, field: { label: Research area, name: researchArea, widget: markdown } }
+      - { label: Closing text (Markdown), name: closingText, widget: markdown, required: false }
   - name: research
     label: Research areas
     folder: content/research

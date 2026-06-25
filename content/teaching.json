@@ -1,0 +1,44 @@
+{
+  "kicker": "Teaching",
+  "title": "CEVE456/556 Uncertainty Quantification",
+  "meta": [
+    "Fall semesters",
+    "Civil & Environmental Engineering",
+    "Graduate / advanced undergraduate"
+  ],
+  "description": "This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.",
+  "linkLabel": "View course page",
+  "linkHref": "https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&p_term=202620&p_crn=25696",
+  "feature": {
+    "src": "assets/teaching-response-surface.png",
+    "alt": "Response surface and sample projection",
+    "caption": "Response surface and sample projection"
+  },
+  "gallery": [
+    {
+      "src": "assets/teaching-pce.png",
+      "alt": "Epistemic uncertainty in surrogate modeling",
+      "caption": "Epistemic uncertainty in surrogate modeling"
+    },
+    {
+      "src": "assets/teaching-lhs.png",
+      "alt": "Latin hypercube sampling",
+      "caption": "Latin hypercube sampling"
+    },
+    {
+      "src": "assets/teaching-adaptive-design.png",
+      "alt": "Adaptive design",
+      "caption": "Adaptive design"
+    },
+    {
+      "src": "assets/teaching-mfmc.png",
+      "alt": "Optimal budget allocation for Multi-fidelity Monte Carlo",
+      "caption": "Optimal budget allocation for Multi-fidelity Monte Carlo"
+    },
+    {
+      "src": "assets/teaching-gp-fitting.png",
+      "alt": "Gaussian process fitting",
+      "caption": "Gaussian process fitting"
+    }
+  ]
+}

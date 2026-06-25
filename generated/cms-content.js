@@ -57,112 +57,11 @@ window.CMS_CONTENT = {
         }
       ]
     },
-    "bio": {
-      "kicker": "About Sang-ri Yi",
-      "heading": "Bridging open-source simulation, uncertainty quantification, and infrastructure resilience.",
-      "portrait": "assets/sangri-yi.png",
-      "portraitAlt": "Dr. Sang-ri Yi",
-      "paragraphs": [
-        "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice University. Her work connects *uncertainty quantification* (UQ) methods with open-source simulation tools and regional resilience analysis.",
-        "Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/).",
-        "At SimCenter, she led the design and implementation of advanced UQ capabilities in open-source natural hazard modeling and simulation applications, including workflows for regional-scale surrogate modeling, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
-      ],
-      "profiles": [
-        {
-          "label": "Google Scholar",
-          "href": "https://scholar.google.com/citations?hl=en&user=2m0CFvgAAAAJ&view_op=list_works&sortby=pubdate"
-        },
-        {
-          "label": "LinkedIn",
-          "href": "https://www.linkedin.com/in/sang-ri-yi-031b26117/"
-        },
-        {
-          "label": "ORCID",
-          "href": "https://orcid.org/0000-0001-7196-127X"
-        }
-      ],
-      "educationHeading": "Education",
-      "education": [
-        {
-          "period": "2020-2025",
-          "detail": "Postdoctoral Scholar, UC Berkeley"
-        },
-        {
-          "period": "2020",
-          "detail": "PhD, Seoul National University"
-        },
-        {
-          "period": "2015",
-          "detail": "BS, Hongik University"
-        }
-      ]
-    },
     "researchHeading": {
       "kicker": "Research",
       "title": "Research directions."
     },
     "teamHeading": "Team",
-    "teaching": {
-      "kicker": "Teaching",
-      "title": "CEVE456/556 Uncertainty Quantification",
-      "meta": [
-        "Fall semesters",
-        "Civil & Environmental Engineering",
-        "Graduate / advanced undergraduate"
-      ],
-      "description": "This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.",
-      "linkLabel": "View course page",
-      "linkHref": "https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&p_term=202620&p_crn=25696",
-      "feature": {
-        "src": "assets/teaching-response-surface.png",
-        "alt": "Response surface and sample projection",
-        "caption": "Response surface and sample projection"
-      },
-      "gallery": [
-        {
-          "src": "assets/teaching-pce.png",
-          "alt": "Epistemic uncertainty in surrogate modeling",
-          "caption": "Epistemic uncertainty in surrogate modeling"
-        },
-        {
-          "src": "assets/teaching-lhs.png",
-          "alt": "Latin hypercube sampling",
-          "caption": "Latin hypercube sampling"
-        },
-        {
-          "src": "assets/teaching-adaptive-design.png",
-          "alt": "Adaptive design",
-          "caption": "Adaptive design"
-        },
-        {
-          "src": "assets/teaching-mfmc.png",
-          "alt": "Optimal budget allocation for Multi-fidelity Monte Carlo",
-          "caption": "Optimal budget allocation for Multi-fidelity Monte Carlo"
-        },
-        {
-          "src": "assets/teaching-gp-fitting.png",
-          "alt": "Gaussian process fitting",
-          "caption": "Gaussian process fitting"
-        }
-      ]
-    },
-    "contact": {
-      "title": "Contact Us",
-      "description": "Dr. Sang-ri Yi's email, office phone number, and office location can be found via the profile link below.",
-      "profileLabel": "Rice profile",
-      "profileHref": "https://profiles.rice.edu/faculty/sang-ri-yi",
-      "positionLabel": "Open Positions",
-      "positionTitle": "Fall 2026 PhD opportunities",
-      "positionSummary": "One or two PhD students are expected, starting Fall 2026.",
-      "guidanceLabel": "Learn more",
-      "guidanceTitle": "To Prospective PhD Students",
-      "guidance": [
-        "Thank you for your interest in joining our lab.",
-        "I am seeking PhD students who are confident in engineering mathematics and statistics and committed to ethical research practices. Please apply to the [Rice CEE PhD Program](https://cee.rice.edu/academics/graduate-programs/phd-program) and see more information on [Graduate Admissions](https://cee.rice.edu/academics/graduate-programs/graduate-admissions).",
-        "Prospective PhD students are encouraged to contact Dr. Yi before or after applying. In the message, please briefly introduce your background, current research interests, and long-term goals, and attach your CV. You are welcome to include other documents, such as a class project you enjoyed, that show your strengths and style.",
-        "Sending a message is encouraged but not required. Every message will be reviewed carefully, though a response may not always be possible. If you have already submitted your application to Rice, please indicate that clearly."
-      ]
-    },
     "footer": {
       "name": "Engineering Risk, Uncertainty, and Resilience Lab",
       "links": [
@@ -202,6 +101,107 @@ window.CMS_CONTENT = {
       ],
       "sourceUrl": "https://uncertainty.blogs.rice.edu/research/"
     }
+  },
+  "bio": {
+    "kicker": "About Sang-ri Yi",
+    "heading": "Bridging open-source simulation, uncertainty quantification, and infrastructure resilience.",
+    "portrait": "assets/sangri-yi.png",
+    "portraitAlt": "Dr. Sang-ri Yi",
+    "paragraphs": [
+      "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice University. Her work connects *uncertainty quantification* (UQ) methods with open-source simulation tools and regional resilience analysis.",
+      "Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/).",
+      "At SimCenter, she led the design and implementation of advanced UQ capabilities in open-source natural hazard modeling and simulation applications, including workflows for regional-scale surrogate modeling, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
+    ],
+    "profiles": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?hl=en&user=2m0CFvgAAAAJ&view_op=list_works&sortby=pubdate"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/sang-ri-yi-031b26117/"
+      },
+      {
+        "label": "ORCID",
+        "href": "https://orcid.org/0000-0001-7196-127X"
+      }
+    ],
+    "educationHeading": "Education",
+    "education": [
+      {
+        "period": "2020-2025",
+        "detail": "Postdoctoral Scholar, UC Berkeley"
+      },
+      {
+        "period": "2020",
+        "detail": "PhD, Seoul National University"
+      },
+      {
+        "period": "2015",
+        "detail": "BS, Hongik University"
+      }
+    ]
+  },
+  "teaching": {
+    "kicker": "Teaching",
+    "title": "CEVE456/556 Uncertainty Quantification",
+    "meta": [
+      "Fall semesters",
+      "Civil & Environmental Engineering",
+      "Graduate / advanced undergraduate"
+    ],
+    "description": "This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.",
+    "linkLabel": "View course page",
+    "linkHref": "https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&p_term=202620&p_crn=25696",
+    "feature": {
+      "src": "assets/teaching-response-surface.png",
+      "alt": "Response surface and sample projection",
+      "caption": "Response surface and sample projection"
+    },
+    "gallery": [
+      {
+        "src": "assets/teaching-pce.png",
+        "alt": "Epistemic uncertainty in surrogate modeling",
+        "caption": "Epistemic uncertainty in surrogate modeling"
+      },
+      {
+        "src": "assets/teaching-lhs.png",
+        "alt": "Latin hypercube sampling",
+        "caption": "Latin hypercube sampling"
+      },
+      {
+        "src": "assets/teaching-adaptive-design.png",
+        "alt": "Adaptive design",
+        "caption": "Adaptive design"
+      },
+      {
+        "src": "assets/teaching-mfmc.png",
+        "alt": "Optimal budget allocation for Multi-fidelity Monte Carlo",
+        "caption": "Optimal budget allocation for Multi-fidelity Monte Carlo"
+      },
+      {
+        "src": "assets/teaching-gp-fitting.png",
+        "alt": "Gaussian process fitting",
+        "caption": "Gaussian process fitting"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Dr. Sang-ri Yi's email, office phone number, and office location can be found via the profile link below.",
+    "profileLabel": "Rice profile",
+    "profileHref": "https://profiles.rice.edu/faculty/sang-ri-yi",
+    "positionLabel": "Open Positions",
+    "positionTitle": "Fall 2026 PhD opportunities",
+    "positionSummary": "One or two PhD students are expected, starting Fall 2026.",
+    "guidanceLabel": "Learn more",
+    "guidanceTitle": "To Prospective PhD Students",
+    "guidance": [
+      "Thank you for your interest in joining our lab.",
+      "I am seeking PhD students who are confident in engineering mathematics and statistics and committed to ethical research practices. Please apply to the [Rice CEE PhD Program](https://cee.rice.edu/academics/graduate-programs/phd-program) and see more information on [Graduate Admissions](https://cee.rice.edu/academics/graduate-programs/graduate-admissions).",
+      "Prospective PhD students are encouraged to contact Dr. Yi before or after applying. In the message, please briefly introduce your background, current research interests, and long-term goals, and attach your CV. You are welcome to include other documents, such as a class project you enjoyed, that show your strengths and style.",
+      "Sending a message is encouraged but not required. Every message will be reviewed carefully, though a response may not always be possible. If you have already submitted your application to Rice, please indicate that clearly."
+    ]
   },
   "research": [
     {
@@ -316,7 +316,11 @@ window.CMS_CONTENT = {
           "bullets": []
         }
       ],
-      "order": 0
+      "order": 0,
+      "paragraphs": [],
+      "challengeBullets": [],
+      "researchBullets": [],
+      "sections": []
     },
     {
       "slug": "resilience-assessment",
@@ -470,7 +474,11 @@ window.CMS_CONTENT = {
           "bullets": []
         }
       ],
-      "order": 1
+      "order": 1,
+      "paragraphs": [],
+      "challengeBullets": [],
+      "researchBullets": [],
+      "sections": []
     },
     {
       "slug": "regional-risk-assessment",
@@ -592,7 +600,11 @@ window.CMS_CONTENT = {
           "bullets": []
         }
       ],
-      "order": 2
+      "order": 2,
+      "paragraphs": [],
+      "challengeBullets": [],
+      "researchBullets": [],
+      "sections": []
     },
     {
       "slug": "random-vibrations-fields",
@@ -692,7 +704,251 @@ window.CMS_CONTENT = {
           "bullets": []
         }
       ],
-      "order": 3
+      "order": 3,
+      "paragraphs": [],
+      "challengeBullets": [],
+      "researchBullets": [],
+      "sections": []
+    }
+  ],
+  "hiddenDrawers": [
+    {
+      "slug": "legacy-overview",
+      "title": "Welcome",
+      "shortTitle": "Welcome",
+      "layout": "legacy-page",
+      "sourceUrl": "https://uncertainty.blogs.rice.edu/",
+      "sourceLabel": "Original Rice lab homepage",
+      "image": "assets/legacy-uq-overview.png",
+      "imageAlt": "Uncertainty quantification overview graphic from the original Rice lab homepage",
+      "summary": "A hidden drawer that transfers the original Rice lab homepage welcome, UQ mission, challenge list, research areas, image, and source links into the current site.",
+      "paragraphs": [
+        [
+          "Welcome to the Engineering Risk, Uncertainty, and Resilience Lab at ",
+          {
+            "text": "Rice CEE",
+            "href": "https://cee.rice.edu/",
+            "strong": false
+          },
+          "."
+        ],
+        [
+          "The lab develops computational ",
+          {
+            "text": "uncertainty quantification (UQ)",
+            "strong": true
+          },
+          " methods for complex, large-scale, multi-hazard simulations, with the goal of supporting ",
+          {
+            "text": "resilient urban infrastructure",
+            "strong": true
+          },
+          "."
+        ],
+        [
+          "Its engineering UQ scope includes ",
+          {
+            "text": "probabilistic modeling",
+            "strong": true
+          },
+          ", ",
+          {
+            "text": "efficient uncertainty propagation",
+            "strong": true
+          },
+          ", and ",
+          {
+            "text": "reduction of uncertainty",
+            "strong": true
+          },
+          ", with emphasis on ",
+          {
+            "text": "scalable statistical tools",
+            "strong": true
+          },
+          " that can be used in practical engineering settings."
+        ],
+        [
+          "Modern natural-hazard risk and resilience assessment often involves ",
+          {
+            "text": "multi-scale",
+            "strong": true
+          },
+          ", ",
+          {
+            "text": "multi-fidelity",
+            "strong": true
+          },
+          ", and ",
+          {
+            "text": "interconnected infrastructure systems",
+            "strong": true
+          },
+          ". Key challenges include:"
+        ]
+      ],
+      "challengeBullets": [
+        [
+          {
+            "text": "High-dimensional",
+            "strong": true
+          },
+          " system input-output representations"
+        ],
+        [
+          {
+            "text": "Aleatoric",
+            "strong": true
+          },
+          " system uncertainty"
+        ],
+        [
+          {
+            "text": "Fail-safe UQ algorithms",
+            "strong": true
+          },
+          " for high-risk systems"
+        ],
+        [
+          "Complex ",
+          {
+            "text": "inter- and intra-system interdependencies",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Decision-making under uncertainty",
+            "strong": true
+          },
+          " and conflicting objectives"
+        ],
+        [
+          {
+            "text": "Spatiotemporal correlation",
+            "strong": true
+          },
+          " analysis"
+        ],
+        [
+          "Modeling and inference from ",
+          {
+            "text": "scarce, imperfect, or indirect datasets",
+            "strong": true
+          }
+        ],
+        [
+          "Balancing computational ",
+          {
+            "text": "scalability",
+            "strong": true
+          },
+          ", ",
+          {
+            "text": "efficiency",
+            "strong": true
+          },
+          ", and ",
+          {
+            "text": "robustness",
+            "strong": true
+          }
+        ],
+        [
+          "High computational ",
+          {
+            "text": "memory and processor demands",
+            "strong": true
+          }
+        ]
+      ],
+      "researchHeading": "Research Areas",
+      "researchIntro": [
+        "The original homepage points to ",
+        {
+          "text": "computational UQ methods",
+          "strong": true
+        },
+        " for understanding uncertainty, risk, and resilience in infrastructure systems under hazards. Topics of interest include:"
+      ],
+      "researchBullets": [
+        [
+          {
+            "text": "Stochastic and deterministic surrogate modeling",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Adaptive design of computer experiments",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Statistical machine learning",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Smart sampling techniques",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Random vibration analysis",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Random process and field representations",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Bayesian inference",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Dimensionality reduction and data compression",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Multi-fidelity UQ",
+            "strong": true
+          }
+        ],
+        [
+          {
+            "text": "Probabilistic decision theories",
+            "strong": true
+          }
+        ]
+      ],
+      "closingText": [
+        "See ",
+        {
+          "text": "Research",
+          "href": "#research",
+          "strong": false
+        },
+        " for more!"
+      ],
+      "links": [],
+      "keywords": [],
+      "applications": "",
+      "examples": [],
+      "order": 0,
+      "description": [],
+      "sections": []
     }
   ],
   "team": [

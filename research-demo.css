@@ -604,5 +604,54 @@ body.research-lightbox-open {
 
   .research-page-hero {
     padding-top: 78px;
-  }
+
+.legacy-drawer-page h3 {
+  margin: 28px 0 12px;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.18;
+}
+
+.legacy-drawer-page p,
+.legacy-drawer-page li {
+  color: #25282c;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.36;
+}
+
+.legacy-drawer-page p {
+  margin: 0 0 16px;
+}
+
+.legacy-drawer-page strong {
+  font-weight: 700;
+}
+
+.legacy-drawer-page a {
+  color: var(--rice-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.legacy-drawer-page ul {
+  margin: 0 0 22px;
+  padding-left: 22px;
+}
+
+.legacy-drawer-page li {
+  margin-bottom: 7px;
+}
+
+.legacy-drawer-image {
+  max-width: 82%;
+  margin: 22px auto 22px;
+}
+
+.legacy-drawer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

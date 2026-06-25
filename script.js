@@ -224,7 +224,6 @@ document.addEventListener("click", (event) => {
 });
 
 const newsContent = window.NEWS_CONTENT || [];
-const newsAtlas = document.querySelector("[data-news-atlas]");
 const newsArchive = document.querySelector("[data-news-archive]");
 
 const richTextHtml = (value) => {
@@ -245,16 +244,6 @@ const newsImageButtonHtml = (image, className) => `
 `;
 
 const newsId = (item) => `news-${item.year}-${item.dateLabel.replace(/[^a-z0-9]+/gi, "-").replace(/(^-|-$)/g, "").toLowerCase()}`;
-
-const renderNewsAtlas = () => {
-  if (!newsAtlas || !newsContent.length) return;
-  const images = newsContent.flatMap((item) => (item.images || []).map((image) => ({ image, targetId: newsId(item) }))).slice(0, 6);
-  newsAtlas.innerHTML = images.map(({ image, targetId }, index) => `
-    <a class="news-atlas-tile ${index === 0 ? "is-lead" : ""}" href="#${targetId}" aria-label="Read the ${escapeHtml(image.alt)} news update">
-      <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt)}">
-    </a>
-  `).join("");
-};
 
 const renderNewsArchive = () => {
   if (!newsArchive || !newsContent.length) return;
@@ -290,15 +279,8 @@ const renderNewsArchive = () => {
   }).join("");
 };
 
-renderNewsAtlas();
 renderNewsArchive();
 
-newsAtlas?.addEventListener("click", (event) => {
-  const link = event.target.closest("a[href^='#news-']");
-  if (!link) return;
-  const target = document.querySelector(link.getAttribute("href"));
-  target?.closest("details")?.setAttribute("open", "");
-});
 const siteLightbox = document.querySelector("[data-site-lightbox]");
 const siteTransparentPixel = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 

@@ -1,0 +1,40 @@
+{
+  "kicker": "About Sang-ri Yi",
+  "heading": "Bridging open-source simulation, uncertainty quantification, and infrastructure resilience.",
+  "portrait": "assets/sangri-yi.png",
+  "portraitAlt": "Dr. Sang-ri Yi",
+  "paragraphs": [
+    "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice University. Her work connects *uncertainty quantification* (UQ) methods with open-source simulation tools and regional resilience analysis.",
+    "Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/).",
+    "At SimCenter, she led the design and implementation of advanced UQ capabilities in open-source natural hazard modeling and simulation applications, including workflows for regional-scale surrogate modeling, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
+  ],
+  "profiles": [
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?hl=en&user=2m0CFvgAAAAJ&view_op=list_works&sortby=pubdate"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/sang-ri-yi-031b26117/"
+    },
+    {
+      "label": "ORCID",
+      "href": "https://orcid.org/0000-0001-7196-127X"
+    }
+  ],
+  "educationHeading": "Education",
+  "education": [
+    {
+      "period": "2020-2025",
+      "detail": "Postdoctoral Scholar, UC Berkeley"
+    },
+    {
+      "period": "2020",
+      "detail": "PhD, Seoul National University"
+    },
+    {
+      "period": "2015",
+      "detail": "BS, Hongik University"
+    }
+  ]
+}

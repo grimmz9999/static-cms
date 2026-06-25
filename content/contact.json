@@ -1,0 +1,17 @@
+{
+  "title": "Contact Us",
+  "description": "Dr. Sang-ri Yi's email, office phone number, and office location can be found via the profile link below.",
+  "profileLabel": "Rice profile",
+  "profileHref": "https://profiles.rice.edu/faculty/sang-ri-yi",
+  "positionLabel": "Open Positions",
+  "positionTitle": "Fall 2026 PhD opportunities",
+  "positionSummary": "One or two PhD students are expected, starting Fall 2026.",
+  "guidanceLabel": "Learn more",
+  "guidanceTitle": "To Prospective PhD Students",
+  "guidance": [
+    "Thank you for your interest in joining our lab.",
+    "I am seeking PhD students who are confident in engineering mathematics and statistics and committed to ethical research practices. Please apply to the [Rice CEE PhD Program](https://cee.rice.edu/academics/graduate-programs/phd-program) and see more information on [Graduate Admissions](https://cee.rice.edu/academics/graduate-programs/graduate-admissions).",
+    "Prospective PhD students are encouraged to contact Dr. Yi before or after applying. In the message, please briefly introduce your background, current research interests, and long-term goals, and attach your CV. You are welcome to include other documents, such as a class project you enjoyed, that show your strengths and style.",
+    "Sending a message is encouraged but not required. Every message will be reviewed carefully, though a response may not always be possible. If you have already submitted your application to Rice, please indicate that clearly."
+  ]
+}
