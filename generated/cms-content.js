@@ -783,16 +783,6 @@ window.CMS_CONTENT = {
         "order": 2
       },
       {
-        "year": "2026",
-        "type": "Conference",
-        "title": "Adaptation of stochastic emulation to shift of distribution.",
-        "authors": "Lim, S. and Yi, S.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
-        "order": 3
-      },
-      {
         "year": "2025",
         "type": "Journal",
         "title": "An open-source simulation platform to support and foster research collaboration in natural hazards engineering.",
@@ -800,16 +790,6 @@ window.CMS_CONTENT = {
         "venue": "Frontiers in Built Environment",
         "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:4TOpqqG69KYC",
         "order": 3
-      },
-      {
-        "year": "2026",
-        "type": "Conference",
-        "title": "Adaptive covariane selection for filter-based joint input-state estimation of hysteretic structures.",
-        "authors": "Kim, T., Yi, S., and Song, J.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
-        "order": 4
       },
       {
         "year": "2025",
@@ -820,16 +800,6 @@ window.CMS_CONTENT = {
         "venue": "International Journal of Disaster Risk Reduction",
         "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:8k81kl-MbHgC",
         "order": 4
-      },
-      {
-        "year": "2026",
-        "type": "Conference",
-        "title": "Stochastic emulation for seismic risk assessment and the impact of intensity measure selection.",
-        "authors": "Yi, S., Taflanidis, A., Toofani Movaghar, P., Galasso, C., and Vamvatsikos, D.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
-        "order": 5
       },
       {
         "year": "2025",
@@ -951,6 +921,16 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Conference",
+        "title": "Adaptation of stochastic emulation to shift of distribution.",
+        "authors": "Lim, S. and Yi, S.",
+        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
+        "date": "June 2-5",
+        "location": "Boulder, CO, USA",
+        "order": 3
+      },
+      {
+        "year": "2026",
+        "type": "Conference",
         "title": "Characterizing debris fields and emulating impact intensity measures.",
         "authors": "Yi, S., Bonus, J., and Arduino, P.",
         "venue": "39th International Conference on Coastal Engineering 2026 (ICCE 2026)",
@@ -961,11 +941,31 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Conference",
+        "title": "Adaptive covariane selection for filter-based joint input-state estimation of hysteretic structures.",
+        "authors": "Kim, T., Yi, S., and Song, J.",
+        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
+        "date": "June 2-5",
+        "location": "Boulder, CO, USA",
+        "order": 4
+      },
+      {
+        "year": "2026",
+        "type": "Conference",
         "title": "No-replication stochastic emulation for multi-output responses and application to seismic risk assessment.",
         "authors": "Yi, S. and Taflanidis, A.",
         "venue": "SIAM Conference on Uncertainty Quantification (UQ26)",
         "date": "March 22-25",
         "location": "Minnesota, MN, USA",
+        "order": 5
+      },
+      {
+        "year": "2026",
+        "type": "Conference",
+        "title": "Stochastic emulation for seismic risk assessment and the impact of intensity measure selection.",
+        "authors": "Yi, S., Taflanidis, A., Toofani Movaghar, P., Galasso, C., and Vamvatsikos, D.",
+        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
+        "date": "June 2-5",
+        "location": "Boulder, CO, USA",
         "order": 5
       },
       {
