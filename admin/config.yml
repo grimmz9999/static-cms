@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-site_url: https://sparkly-melomakarona-f57d78.netlify.app
-display_url: https://sparkly-melomakarona-f57d78.netlify.app
+site_url: https://eur-lab.netlify.app
+display_url: https://eur-lab.netlify.app
 media_folder: assets/uploads
 public_folder: /assets/uploads
 publish_mode: simple
