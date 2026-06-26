@@ -1,0 +1,35 @@
+﻿name: Build CMS content
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "content/**"
+      - "tools/build-content.mjs"
+      - ".github/workflows/build-cms-content.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-cms-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Rebuild generated CMS content
+        run: node tools/build-content.mjs
+
+      - name: Commit generated CMS content
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated/cms-content.js
+          git diff --cached --quiet || git commit -m "Update generated CMS content"
+          git push
