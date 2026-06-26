@@ -746,27 +746,21 @@ window.CMS_CONTENT = {
           "."
         ],
         [
-          "Its engineering UQ scope includes ",
+          "Its engineering UQ scope includes probabilistic modeling, efficient uncertainty propagation, and reduction of uncertainty, with emphasis on ",
           {
-            "text": "probabilistic modeling",
+            "text": "scalable and robust",
             "strong": true
           },
-          ", ",
+          " ",
           {
-            "text": "efficient uncertainty propagation",
+            "text": "statistical tools",
             "strong": true
           },
-          ", and ",
+          " that can be ",
           {
-            "text": "reduction of uncertainty",
+            "text": "readily deployed to real-world engineering problems.",
             "strong": true
-          },
-          ", with emphasis on ",
-          {
-            "text": "scalable statistical tools",
-            "strong": true
-          },
-          " that can be used in practical engineering settings."
+          }
         ],
         [
           "Modern natural-hazard risk and resilience assessment often involves ",
@@ -781,7 +775,7 @@ window.CMS_CONTENT = {
           },
           ", and ",
           {
-            "text": "interconnected infrastructure systems",
+            "text": "complex infrastructural systems",
             "strong": true
           },
           ". Key challenges include:"
@@ -789,77 +783,31 @@ window.CMS_CONTENT = {
       ],
       "challengeBullets": [
         [
-          {
-            "text": "High-dimensional",
-            "strong": true
-          },
-          " system input-output representations"
+          "High-dimensional system input-output representations"
         ],
         [
-          {
-            "text": "Aleatoric",
-            "strong": true
-          },
-          " system uncertainty"
+          "Aleatoric system uncertainty"
         ],
         [
-          {
-            "text": "Fail-safe UQ algorithms",
-            "strong": true
-          },
-          " for high-risk systems"
+          "Fail-safe UQ algorithms for high-risk systems"
         ],
         [
-          "Complex ",
-          {
-            "text": "inter- and intra-system interdependencies",
-            "strong": true
-          }
+          "Complex inter- and intra-system interdependencies"
         ],
         [
-          {
-            "text": "Decision-making under uncertainty",
-            "strong": true
-          },
-          " and conflicting objectives"
+          "Decision-making under uncertainty and conflicting objectives"
         ],
         [
-          {
-            "text": "Spatiotemporal correlation",
-            "strong": true
-          },
-          " analysis"
+          "Spatiotemporal correlation analysis"
         ],
         [
-          "Modeling and inference from ",
-          {
-            "text": "scarce, imperfect, or indirect datasets",
-            "strong": true
-          }
+          "Modeling and inference from scarce, imperfect, or indirect datasets"
         ],
         [
-          "Balancing computational ",
-          {
-            "text": "scalability",
-            "strong": true
-          },
-          ", ",
-          {
-            "text": "efficiency",
-            "strong": true
-          },
-          ", and ",
-          {
-            "text": "robustness",
-            "strong": true
-          }
+          "Balancing computational scalability, efficiency, and robustness"
         ],
         [
-          "High computational ",
-          {
-            "text": "memory and processor demands",
-            "strong": true
-          }
+          "High computational memory and processor demands"
         ]
       ],
       "researchHeading": "Research Areas",
@@ -873,64 +821,34 @@ window.CMS_CONTENT = {
       ],
       "researchBullets": [
         [
-          {
-            "text": "Stochastic and deterministic surrogate modeling",
-            "strong": true
-          }
+          "Stochastic and deterministic surrogate modeling"
         ],
         [
-          {
-            "text": "Adaptive design of computer experiments",
-            "strong": true
-          }
+          "Adaptive design of computer experiments"
         ],
         [
-          {
-            "text": "Statistical machine learning",
-            "strong": true
-          }
+          "Statistical machine learning"
         ],
         [
-          {
-            "text": "Smart sampling techniques",
-            "strong": true
-          }
+          "Smart sampling techniques"
         ],
         [
-          {
-            "text": "Random vibration analysis",
-            "strong": true
-          }
+          "Random vibration analysis"
         ],
         [
-          {
-            "text": "Random process and field representations",
-            "strong": true
-          }
+          "Random process and field representations"
         ],
         [
-          {
-            "text": "Bayesian inference",
-            "strong": true
-          }
+          "Bayesian inference"
         ],
         [
-          {
-            "text": "Dimensionality reduction and data compression",
-            "strong": true
-          }
+          "Dimensionality reduction and data compression"
         ],
         [
-          {
-            "text": "Multi-fidelity UQ",
-            "strong": true
-          }
+          "Multi-fidelity UQ"
         ],
         [
-          {
-            "text": "Probabilistic decision theories",
-            "strong": true
-          }
+          "Probabilistic decision theories"
         ]
       ],
       "closingText": [
@@ -1738,7 +1656,7 @@ window.CMS_CONTENT = {
           "href": "https://cee.rice.edu/",
           "strong": false
         },
-        " as an Assistant Professor."
+        " as an Assistant Professor!"
       ],
       "slug": "2025-jul-2025",
       "order": 7,
