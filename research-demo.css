@@ -253,13 +253,15 @@
 
 .research-demo-intro strong,
 .research-full-header strong,
-.research-detail-copy strong {
+.research-detail-copy strong,
+.legacy-drawer-page strong {
   font-weight: 700;
 }
 
 .research-demo-intro a,
 .research-full-header a,
-.research-detail-copy a {
+.research-detail-copy a,
+.legacy-drawer-page a {
   color: var(--rice-blue);
   font-weight: 700;
   text-decoration: underline;
@@ -624,17 +626,6 @@ body.research-lightbox-open {
   margin: 0 0 16px;
 }
 
-.legacy-drawer-page strong {
-  font-weight: 700;
-}
-
-.legacy-drawer-page a {
-  color: var(--rice-blue);
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
 
 .legacy-drawer-page ul {
   margin: 0 0 22px;
