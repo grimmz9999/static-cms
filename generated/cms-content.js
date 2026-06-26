@@ -1572,7 +1572,7 @@ window.CMS_CONTENT = {
             "href": "https://cdn.asce.org/asce-conferences/emi-conference.org/s3fs-public/EMI-2026-MS-NOV25.pdf#page=73",
             "strong": false
           },
-          ": uncertainty quantification and surrogate modeling for natural hazards engineering."
+          ": uncertainty quantification and surrogate modeling for natural hazard engineering."
         ]
       ],
       "slug": "2025-dec-2025",
