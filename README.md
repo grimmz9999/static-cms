@@ -1,33 +1,78 @@
-# Lab website CMS handoff
+﻿# Lab website CMS handoff
 
-This is a static lab website with an editor dashboard at `/admin`. Routine content is stored in `content/`; the design, CSS, interactions, and CMS configuration remain developer-managed.
+## Overview
 
-## Before launch
+This repository contains the static website for the Engineering Risk, Uncertainty, and Resilience Lab. The public website is static HTML/CSS/JavaScript, with routine content maintained through a Decap CMS editor at `/admin`.
 
-1. Create a GitHub repository in the customer's organization and push this folder to its `master` branch.
-2. Import that repository into a customer-owned Netlify account. Netlify runs `npm run build` for every deployment.
-3. In Netlify, enable **Identity**, set registrations to **Invite only**, then enable **Git Gateway**.
-4. Invite the named lab owner through Netlify Identity. Do not use a developer's personal account.
-5. Replace both `YOUR-SITE.netlify.app` values in `admin/config.yml` with the Netlify preview URL, then with the final custom-domain URL after DNS is connected.
-6. Add the custom domain in Netlify and add it to the allowed Identity redirect URLs.
+Current Netlify URLs:
 
-## Editing and publishing
+- Website: https://eur-lab.netlify.app
+- CMS admin: https://eur-lab.netlify.app/admin/
 
-Visit `https://your-domain.example/admin`, sign in, select a content collection, make changes, and choose **Publish**. The CMS commits to the `master` branch; Netlify automatically builds and publishes the updated site.
+The built website can be deployed anywhere that can host static files. The current no-code maintenance workflow, however, relies on GitHub and Netlify:
 
-- **Site settings** controls metadata, brand, navigation labels, hero, research intro, team heading, and footer.
-- **Biography**, **Teaching**, and **Contact us** are independent single-page CMS sections so those page areas can be maintained without editing global site settings.
-- **Research areas**, **Team members**, **Publications and presentations**, and **News** support add, edit, reorder, and delete actions. Smaller display-order numbers appear first.
-- Use the image selector for every image. Uploads are stored in `assets/uploads/`; always provide useful alt text and a caption where available.
-- Text fields marked Markdown support paragraphs, `*emphasis*`, `**bold**`, and `[link text](https://example.org)`.
+- GitHub stores the repository, content files, uploaded media, revision history, and GitHub Actions workflow.
+- Netlify hosts the site, provides the CMS login through Netlify Identity, and connects Decap CMS to GitHub through Git Gateway.
+- GitHub Actions rebuilds `generated/cms-content.js` after CMS/content changes so the repository stays in sync with the deployed site.
+
+## Repository structure
+
+- `content/` contains the editable CMS content.
+- `content/site.json` controls site metadata, brand, navigation, hero, research intro, team heading, footer, and Site settings content.
+- `content/bio.json`, `content/teaching.json`, and `content/contact.json` control independent homepage sections.
+- `content/research/`, `content/team/`, `content/publications/`, and `content/news/` contain editable collection records.
+- `content/hidden-drawers/legacy-overview.json` controls the hidden legacy overview drawer. In the CMS, it is edited under **Site settings**, not under Research.
+- `assets/` contains curated site images and uploaded media. CMS uploads are stored in `assets/uploads/`.
+- `admin/config.yml` defines the CMS collections, fields, media folder, and Git Gateway backend.
+- `generated/cms-content.js` is the generated content bundle consumed by `index.html`.
+- `tools/build-content.mjs` builds `generated/cms-content.js` from the JSON files in `content/`.
+- `.github/workflows/build-cms-content.yml` rebuilds and commits `generated/cms-content.js` after CMS/content changes are pushed to GitHub.
+- `index.html`, `styles.css`, `research-demo.css`, `research-demo.js`, `script.js`, `content-loader.js`, and `cms-icon-enhancements.js` define the site layout, styling, rendering, and interactions. Treat these as developer-maintained files.
+- `index.legacy-static.html` is a reference copy of the old static page and is not the active website.
+
+## Maintenance workflow
+
+For routine content edits, use the CMS:
+
+1. Visit https://eur-lab.netlify.app/admin/.
+2. Sign in with the Netlify Identity account invited to the site.
+3. Edit the relevant CMS collection and choose **Publish**.
+4. Decap CMS commits the content or uploaded media changes to the GitHub repository on `master`.
+5. GitHub Actions rebuilds `generated/cms-content.js` and commits the generated update back to GitHub.
+6. Netlify redeploys the site automatically.
+
+A normal CMS edit may create two Netlify deploys:
+
+1. The CMS content/media commit.
+2. The GitHub Actions commit that updates `generated/cms-content.js`.
+
+The second deploy is the final synchronized version.
+
+If editing directly in GitHub, edit content files only unless a developer is intentionally changing the site implementation. Commit changes to `master`; GitHub Actions and Netlify should handle the generated content update and deployment.
+
+## Editing guidance
+
+- Text fields marked Markdown support normal paragraphs, links, `*emphasis*`, `**bold**`, and lists.
+- Smaller `Display order` numbers appear first in ordered CMS collections.
+- Upload images through the CMS image selector when possible. Uploaded images go to `assets/uploads/`.
+- Always provide useful image alt text and captions where the CMS asks for them.
+- **Site settings** includes global/homepage settings and the hidden legacy overview drawer.
+- **Biography**, **Research areas**, **Team members**, **Publications and presentations**, **Teaching**, **News**, and **Contact us** follow the order of the homepage sections.
+- The visible Research section should remain exactly four cards unless a developer intentionally changes the design.
+- `generated/cms-content.js` is generated. Avoid manual edits to it; let GitHub Actions or `node tools/build-content.mjs` recreate it.
 
 ## Safety and recovery
 
-- Keep GitHub, Netlify, domain/DNS, and the administrator email customer-owned.
-- Do not put passwords, API keys, database credentials, or private documents in this repository.
-- To undo a content change, restore the earlier commit in GitHub, then let Netlify deploy it. The original static homepage is retained as `index.legacy-static.html` for reference only.
-- Keep `admin/config.yml`, `tools/build-content.mjs`, CSS, and interaction scripts under developer control. They define the website structure and should be changed only by a developer.
+- Keep GitHub, Netlify, domain/DNS, and administrator accounts customer-owned.
+- Do not store passwords, API keys, database credentials, private documents, or other secrets in this repository.
+- To undo a content mistake, restore or revert the earlier GitHub commit, then let Netlify deploy the restored version.
+- Keep `admin/config.yml`, build scripts, CSS, JavaScript, templates, and generated workflow logic under developer control. They define the website structure and should not be casually edited during routine maintenance.
+- `index.legacy-static.html` is retained for reference only; it is not the active homepage.
+- GitHub Actions must have repository write permission for automatic generated-content commits. In GitHub, check **Settings → Actions → General → Workflow permissions → Read and write permissions**.
 
-## Local preview
+## Important notes
 
-After editing content locally, run `node tools/build-content.mjs`, then serve this folder with any static web server. Opening `index.html` directly can prevent browser features from behaving like the deployed site.
+- The static website can be moved to another host, but the current CMS login and no-code maintenance workflow are tied to Netlify Identity, Netlify Git Gateway, GitHub, and GitHub Actions.
+- Netlify runs `npm run build` during deploy. Local Node/npm installation is not required for routine CMS edits.
+- If a developer wants to preview generated content locally, run `node tools/build-content.mjs` or `npm run build`, then serve the folder with a local static server.
+- Opening `index.html` directly with `file://` may not behave exactly like the deployed Netlify site.
