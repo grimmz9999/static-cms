@@ -16,8 +16,9 @@ The site is based on content from:
 
 Current deployment / admin context:
 
-- Netlify preview site: https://sparkly-melomakarona-f57d78.netlify.app
-- CMS admin route: https://sparkly-melomakarona-f57d78.netlify.app/admin/
+- Netlify live site: https://eur-lab.netlify.app
+- CMS admin route: https://eur-lab.netlify.app/admin/
+- GitHub repository: https://github.com/grimmz9999/static-cms
 - Git branch used by CMS: `master`
 - CMS backend: Netlify Identity + Git Gateway
 - Decap CMS is loaded from a local bundled file copied to `admin/decap-cms.js`, not from a CDN.
@@ -28,6 +29,8 @@ Important build files:
 - `netlify.toml`: Netlify runs `npm run build` and publishes the repo root.
 - `tools/build-content.mjs`: reads JSON content and writes `generated/cms-content.js`.
 - `tools/copy-decap-cms.mjs`: copies Decap CMS from `node_modules/decap-cms/dist/decap-cms.js` into `admin/decap-cms.js`.
+- `.github/workflows/build-cms-content.yml`: rebuilds `generated/cms-content.js` on GitHub after content changes and commits the generated update back to `master`.
+- `README.md`: customer-facing handoff and maintenance guide.
 
 ## Main Runtime Files
 
@@ -39,6 +42,44 @@ Important build files:
 - `research-demo.css`: Research cards/drawers/lightbox plus hidden legacy drawer styling.
 - `cms-icon-enhancements.js`: restores inline profile/footer icon treatments after CMS rendering.
 - `generated/cms-content.js`: generated file; do not edit directly.
+
+## Customer Editing Boundaries
+
+Routine customer editing should happen through the CMS at `/admin` or, for GitHub-familiar maintainers, by editing JSON content files under `content/`.
+
+Customer-editable content:
+
+- `content/site.json`
+- `content/bio.json`
+- `content/teaching.json`
+- `content/contact.json`
+- `content/research/*.json`
+- `content/hidden-drawers/legacy-overview.json`
+- `content/team/*.json`
+- `content/publications/*.json`
+- `content/news/*.json`
+- CMS-uploaded media in `assets/uploads/`
+
+Developer-maintained files:
+
+- `index.html`
+- `styles.css`
+- `research-demo.css`
+- `content-loader.js`
+- `research-demo.js`
+- `script.js`
+- `cms-icon-enhancements.js`
+- `admin/config.yml`
+- `tools/*.mjs`
+- `.github/workflows/build-cms-content.yml`
+- `netlify.toml`
+
+Generated/reference files:
+
+- `generated/cms-content.js` is generated from `content/`; do not manually edit it unless intentionally repairing a build problem.
+- `index.legacy-static.html` is reference-only and is not the active homepage.
+
+If the user asks to "remove or clearly label anything not meant for customer editing," prefer clear labels/comments and README guidance over deleting files. Do not delete developer-maintained files or reference files unless the user explicitly confirms removal.
 
 ## CMS Content Structure
 
@@ -61,6 +102,7 @@ Important CMS structure decision:
 - Biography, Teaching, and Contact are independent CMS collections, not nested inside Site settings.
 - Site settings should remain for global/header/hero/navigation/research-intro/footer type content.
 - The hidden legacy drawer is edited as a subordinate file inside the Site settings CMS collection, not as a top-level CMS collection, and not inside Research areas.
+- Research should remain exactly four visible cards unless the design is intentionally changed by a developer.
 
 Image uploads are configured as:
 
@@ -314,12 +356,17 @@ Inline SVG/profile icons were not deleted from the legacy static file; they were
 - CMS branch is `master`, not `main`.
 - The invited lab owner must accept the Netlify Identity invitation and set a password; logging in with a Gmail address is not the same as Google OAuth unless an external provider is configured.
 - The customer should own GitHub, Netlify, DNS/domain, and editor accounts.
+- The static site can be hosted anywhere, but the current no-code CMS maintenance workflow relies on Netlify Identity, Netlify Git Gateway, GitHub, and GitHub Actions.
+- GitHub Actions must have repository write permission: GitHub Settings -> Actions -> General -> Workflow permissions -> Read and write permissions.
+- A normal CMS edit may trigger two Netlify deploys: first the CMS content/media commit, then the GitHub Actions commit that updates `generated/cms-content.js`. The second deploy is the final synchronized version.
+- After GitHub Actions commits generated content, local developers should pull/fetch before making the next local commit so the local repo includes the bot-generated `generated/cms-content.js` update.
 
 ## Media Notes
 
 - Decap media library shows files from `assets/uploads`.
 - Existing curated site images live in `assets/` and subfolders; they will not appear in the media library unless copied/migrated into uploads.
 - Do not set `media_folder: assets` casually, because that mixes uploads with curated assets and JS/data files.
+- Media uploaded through Decap CMS can be committed into GitHub under `assets/uploads/` through Git Gateway.
 
 ## Current Cache Versions
 
@@ -332,6 +379,14 @@ Current active cache versions in `index.html` may change as edits continue. At t
 - `script.js?v=11`
 
 When editing CSS/JS, update the cache query version in `index.html` so browser refreshes show changes.
+
+## Local / Build Notes
+
+- Netlify runs `npm run build`, which builds content and copies the Decap CMS bundle.
+- Local Node/npm is helpful for development but not required for routine customer CMS edits.
+- In the Codex desktop environment used during this project, PowerShell did not expose `node`/`npm` and `node_modules` was not installed, but the Node REPL tool could still run `tools/build-content.mjs`.
+- To rebuild generated content in a normal developer environment, run `node tools/build-content.mjs` or `npm run build`.
+- Opening `index.html` directly with `file://` may not behave exactly like the deployed site. Prefer a local static server or the Netlify deployment for preview.
 
 ## Previous / Reference Files
 

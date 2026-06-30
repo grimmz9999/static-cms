@@ -72,6 +72,7 @@ If editing directly in GitHub, edit content files only unless a developer is int
 
 ## Important notes
 
+- For future development or Codex-assisted edits, see `PROJECT_CONTEXT.md`. It records implementation decisions, design preferences, CMS structure, and known maintenance notes. Routine customer content editing should still be done through `/admin` or the `content/` files described above.
 - The static website can be moved to another host, but the current CMS login and no-code maintenance workflow are tied to Netlify Identity, Netlify Git Gateway, GitHub, and GitHub Actions.
 - Netlify runs `npm run build` during deploy. Local Node/npm installation is not required for routine CMS edits.
 - If a developer wants to preview generated content locally, run `node tools/build-content.mjs` or `npm run build`, then serve the folder with a local static server.
