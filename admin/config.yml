@@ -219,8 +219,6 @@ collections:
           - { label: Course title, name: title, widget: string }
           - { label: Metadata, name: meta, widget: list, field: { label: Item, name: item, widget: string } }
           - { label: Description, name: description, widget: text }
-          - { label: Course link label, name: linkLabel, widget: string }
-          - { label: Course URL, name: linkHref, widget: string }
           - label: Featured image
             name: feature
             widget: object

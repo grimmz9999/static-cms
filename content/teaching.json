@@ -7,8 +7,6 @@
     "Graduate / advanced undergraduate"
   ],
   "description": "This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.",
-  "linkLabel": "View course page",
-  "linkHref": "https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&p_term=202620&p_crn=25696",
   "feature": {
     "src": "assets/teaching-response-surface.png",
     "alt": "Response surface and sample projection",

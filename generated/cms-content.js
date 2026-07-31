@@ -151,8 +151,6 @@ window.CMS_CONTENT = {
       "Graduate / advanced undergraduate"
     ],
     "description": "This course introduces computational methods in uncertainty quantification for civil, environmental, and other engineering fields, including global sensitivity analysis, multi-fidelity Monte Carlo, Gaussian process and polynomial chaos surrogate models, active learning, and dimensionality reduction.",
-    "linkLabel": "View course page",
-    "linkHref": "https://courses.rice.edu/courses/courses/!SWKSCAT.cat?p_action=COURSE&p_term=202620&p_crn=25696",
     "feature": {
       "src": "assets/teaching-response-surface.png",
       "alt": "Response surface and sample projection",
@@ -898,13 +896,21 @@ window.CMS_CONTENT = {
     "publications": [
       {
         "year": "2026",
-        "id": "j-se1",
         "type": "Journal",
-        "title": "Seismic structural response and loss estimation for dense urban districts using neural network parameterized Gaussian process.",
-        "authors": "B. Choi, S. Yi, and T. Kim",
-        "venue": "Earthquake Engineering & Structural Dynamics",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:j3f4tGmQtD8C",
+        "title": "Reliable building inventory imputation for regional-scale risk assessment: An uncertainty-guided framework using spatially-enhanced Transformers.",
+        "authors": "Song, Z., Jiang, W., Yi, S., and Zhang, J.",
+        "venue": "Reliability Engineering & System Safety",
+        "href": "https://doi.org/10.1016/j.ress.2026.112436",
         "order": 0
+      },
+      {
+        "year": "2026",
+        "type": "Journal",
+        "title": "Dimensionality reduction can be used as a surrogate model for high-dimensional forward uncertainty quantification.",
+        "authors": "Kim, J., Yi, S., and Wang, Z.",
+        "venue": "Reliability Engineering & System Safety",
+        "href": "https://doi.org/10.1016/j.ress.2025.111474",
+        "order": 1
       },
       {
         "year": "2026",
@@ -913,18 +919,26 @@ window.CMS_CONTENT = {
         "title": "Seismic structural response and loss estimation for dense urban districts using neural network parameterized gaussian process.",
         "authors": "Choi B., Yi, S., and Kim, T.",
         "venue": "Earthquake Engineering & Structural Dynamics",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:j3f4tGmQtD8C",
-        "order": 0
+        "href": "https://doi.org/10.1002/eqe.70087",
+        "order": 2
       },
       {
-        "year": "2025",
-        "id": "j-recovery",
+        "year": "2026",
         "type": "Journal",
-        "title": "Defining recoverability from system-reliability-based disaster resilience analysis perspective.",
-        "authors": "S. Yi and T. Kim",
-        "venue": "International Journal of Disaster Risk Reduction",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:mB3voiENLucC",
-        "order": 1
+        "title": "A composition of simplified physics-based model with neural operator for trajectory-level seismic response predictions of structural systems.",
+        "authors": "Kim, J., Yi, S., and Wang, Z.",
+        "venue": "Structural Safety",
+        "href": "https://doi.org/10.1016/j.strusafe.2025.102668",
+        "order": 3
+      },
+      {
+        "year": "2026",
+        "type": "Journal",
+        "title": "Two-step algorithmic adaptive particle filter for system identification of sudden structural damage.",
+        "authors": "Lee, S., Kim, M., and Yi, S.",
+        "venue": "ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering",
+        "href": "https://doi.org/10.1061/ajrua6.rueng-1688",
+        "order": 4
       },
       {
         "year": "2025",
@@ -933,18 +947,17 @@ window.CMS_CONTENT = {
         "title": "Defining recoverability from system-reliability-based disaster resilience analysis perspective.",
         "authors": "Yi, S. and Kim, T.",
         "venue": "International Journal of Disaster Risk Reduction",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:mB3voiENLucC",
-        "order": 1
+        "href": "https://doi.org/10.1016/j.ijdrr.2025.105862",
+        "order": 5
       },
       {
         "year": "2025",
-        "id": "j-doe",
         "type": "Journal",
-        "title": "Surrogate-aided Bayesian Calibration with adaptive learning strategies.",
-        "authors": "A. Taflanidis, Aakash, B.S., S. Yi, and J.P. Conte",
-        "venue": "Mechanical Systems and Signal Processing",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:zYLM7Y9cAGgC",
-        "order": 2
+        "title": "Impact of structural information fidelity on reduced-order model development for regional risk assessment.",
+        "authors": "Yi, S., Taflanidis, A., Toofani Movaghar, P., and Galasso, C.",
+        "venue": "Structural Safety",
+        "href": "https://doi.org/10.1016/j.strusafe.2025.102602",
+        "order": 6
       },
       {
         "year": "2025",
@@ -953,8 +966,8 @@ window.CMS_CONTENT = {
         "title": "Surrogate-aided Bayesian Calibration with adaptive learning strategies.",
         "authors": "Taflanidis, A., Aakash, B.S., Yi, S., and Conte, J.P.",
         "venue": "Mechanical Systems and Signal Processing",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:zYLM7Y9cAGgC",
-        "order": 2
+        "href": "https://doi.org/10.1016/j.ymssp.2025.113014",
+        "order": 7
       },
       {
         "year": "2025",
@@ -962,8 +975,8 @@ window.CMS_CONTENT = {
         "title": "An open-source simulation platform to support and foster research collaboration in natural hazards engineering.",
         "authors": "Zsarnoczay et al.",
         "venue": "Frontiers in Built Environment",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:4TOpqqG69KYC",
-        "order": 3
+        "href": "https://doi.org/10.3389/fbuil.2025.1590479",
+        "order": 8
       },
       {
         "year": "2025",
@@ -972,8 +985,17 @@ window.CMS_CONTENT = {
         "title": "Disaster resilience analysis framework for lifeline networks: integrating reliability, redundancy, and recoverability.",
         "authors": "Kim, T., Yi, S., Kim, J. H., and Byun, J.E.",
         "venue": "International Journal of Disaster Risk Reduction",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:8k81kl-MbHgC",
-        "order": 4
+        "href": "https://doi.org/10.1016/j.ijdrr.2025.105436",
+        "order": 9
+      },
+      {
+        "year": "2025",
+        "type": "Journal",
+        "title": "Multi-output stochastic emulation with applications to seismic response correlation estimation.",
+        "authors": "Yi, S. and Taflanidis, A.",
+        "venue": "Structural Safety",
+        "href": "https://doi.org/10.1016/j.strusafe.2025.102578",
+        "order": 10
       },
       {
         "year": "2025",
@@ -981,8 +1003,8 @@ window.CMS_CONTENT = {
         "title": "Framework for uncertainty quantification of wave-structure interaction in a flume.",
         "authors": "Luo, X., Nandurdikar, V., Yi, S., Revell, A., Fourtakas, G., and Harish, A.B.",
         "venue": "Computational Particle Mechanics",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:KlAtU1dfN6UC",
-        "order": 5
+        "href": "https://doi.org/10.1007/s40571-025-00967-4",
+        "order": 11
       },
       {
         "year": "2025",
@@ -990,8 +1012,26 @@ window.CMS_CONTENT = {
         "title": "System-reliability-based disaster resilience analysis of cable-stayed bridge under tank truck fire hazards.",
         "authors": "Lim, S., Yi, S., Kim, H., and Song, J.",
         "venue": "ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:MXK_kJrjxJIC",
-        "order": 6
+        "href": "https://doi.org/10.1061/ajrua6.rueng-1439",
+        "order": 12
+      },
+      {
+        "year": "2024",
+        "type": "Journal",
+        "title": "Stochastic emulation with enhanced partial- and no-replication strategies for seismic response distribution estimation.",
+        "authors": "Yi, S. and Taflanidis, A.",
+        "venue": "Earthquake Engineering and Structural Dynamics",
+        "href": "https://doi.org/10.1002/eqe.4115",
+        "order": 13
+      },
+      {
+        "year": "2024",
+        "type": "Journal",
+        "title": "Anti-price-gouging law is neither good nor bad in itself: a proposal of narrative numeric method for transdisciplinary social discourses.",
+        "authors": "Byun, J.E. and Yi, S.",
+        "venue": "npj Natural Hazards",
+        "href": "https://doi.org/10.1038/s44304-024-00005-y",
+        "order": 14
       },
       {
         "year": "2024",
@@ -1000,8 +1040,8 @@ window.CMS_CONTENT = {
         "title": "Accelerated system-reliability-based disaster resilience analysis for structural systems.",
         "authors": "Kim, T. and Yi, S.",
         "venue": "Structural Safety",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:Y0pCki6q_DkC",
-        "order": 7
+        "href": "https://doi.org/10.1016/j.strusafe.2024.102479",
+        "order": 15
       },
       {
         "year": "2024",
@@ -1009,8 +1049,8 @@ window.CMS_CONTENT = {
         "title": "Long-range Ising model for regional-scale seismic risk analysis.",
         "authors": "Oh, S., Yi, S., and Wang, Z.",
         "venue": "Earthquake Engineering & Structural Dynamics",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:eQOLeE2rZwMC",
-        "order": 8
+        "href": "https://doi.org/10.1002/eqe.4198",
+        "order": 16
       },
       {
         "year": "2024",
@@ -1018,8 +1058,35 @@ window.CMS_CONTENT = {
         "title": "Active learning-based optimization of structures under stochastic excitations with first-passage probability constraints.",
         "authors": "Kim, J., Yi, S., and Song, J.",
         "venue": "Engineering Structures",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:QIV2ME_5wuYC",
-        "order": 9
+        "href": "https://doi.org/10.1016/j.engstruct.2024.117873",
+        "order": 17
+      },
+      {
+        "year": "2024",
+        "type": "Journal",
+        "title": "Efficient system-reliability-based disaster resilience analysis of structures using importance sampling.",
+        "authors": "Kim, J., Yi, S., Park, J., and Kim, T.",
+        "venue": "Journal of Engineering Mechanics",
+        "href": "https://doi.org/10.1061/jenmdt.emeng-7800",
+        "order": 18
+      },
+      {
+        "year": "2023",
+        "type": "Journal",
+        "title": "Computationally efficient adaptive design of experiments for global metamodeling through integrated error approximation and multi-criteria search strategies.",
+        "authors": "Yi, S. and Taflanidis, A.",
+        "venue": "Journal of Engineering Mechanics",
+        "href": "https://doi.org/10.1061/jenmdt.emeng-7083",
+        "order": 19
+      },
+      {
+        "year": "2023",
+        "type": "Journal",
+        "title": "System-reliability-based disaster resilience analysis for structures considering aleatory uncertainties in external loads.",
+        "authors": "Yi, S. and Kim, T.",
+        "venue": "Earthquake Engineering & Structural Dynamics",
+        "href": "https://doi.org/10.1002/eqe.3991",
+        "order": 20
       },
       {
         "year": "2023",
@@ -1028,8 +1095,26 @@ window.CMS_CONTENT = {
         "title": "Estimation of first-passage probability under stochastic wind excitations by active-learning-based heteroscedastic Gaussian process.",
         "authors": "Kim, J., Yi, S., and Song, J.",
         "venue": "Structural Safety",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:M3ejUd6NZC8C",
-        "order": 10
+        "href": "https://doi.org/10.1016/j.strusafe.2022.102268",
+        "order": 21
+      },
+      {
+        "year": "2021",
+        "type": "Journal",
+        "title": "First-passage probability estimation by Poisson branching process model.",
+        "authors": "Yi, S. and Song, J.",
+        "venue": "Structural Safety",
+        "href": "https://doi.org/10.1016/j.strusafe.2020.102027",
+        "order": 22
+      },
+      {
+        "year": "2019",
+        "type": "Journal",
+        "title": "Gaussian mixture-based equivalent linearization method (GM-ELM) for fragility analysis of structures under nonstationary excitations.",
+        "authors": "Yi, S., Wang, Z., and Song, J.",
+        "venue": "Earthquake Engineering and Structural Dynamics",
+        "href": "https://doi.org/10.1002/eqe.3185",
+        "order": 23
       },
       {
         "year": "2018",
@@ -1037,8 +1122,8 @@ window.CMS_CONTENT = {
         "title": "Particle filter-based monitoring and prediction of spatiotemporal corrosion using successive measurements of structural responses.",
         "authors": "Yi, S. and Song, J.",
         "venue": "Sensors",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:_FxGoFyzp5QC",
-        "order": 11
+        "href": "https://doi.org/10.3390/s18113909",
+        "order": 24
       },
       {
         "year": "2018",
@@ -1047,8 +1132,8 @@ window.CMS_CONTENT = {
         "title": "Bivariate Gaussian mixture based equivalent linearization method (GM-ELM) for stochastic seismic analysis of nonlinear structures.",
         "authors": "Yi, S., Wang, Z., and Song, J.",
         "venue": "Earthquake Engineering & Structural Dynamics",
-        "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2m0CFvgAAAAJ&citation_for_view=2m0CFvgAAAAJ:5nxA0vEk-isC",
-        "order": 12
+        "href": "https://doi.org/10.1002/eqe.2985",
+        "order": 25
       }
     ],
     "conferences": [
@@ -1095,16 +1180,6 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Conference",
-        "title": "Adaptation of stochastic emulation to shift of distribution.",
-        "authors": "Lim, S. and Yi, S.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
-        "order": 3
-      },
-      {
-        "year": "2026",
-        "type": "Conference",
         "title": "Characterizing debris fields and emulating impact intensity measures.",
         "authors": "Yi, S., Bonus, J., and Arduino, P.",
         "venue": "39th International Conference on Coastal Engineering 2026 (ICCE 2026)",
@@ -1115,31 +1190,11 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Conference",
-        "title": "Adaptive covariane selection for filter-based joint input-state estimation of hysteretic structures.",
-        "authors": "Kim, T., Yi, S., and Song, J.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
-        "order": 4
-      },
-      {
-        "year": "2026",
-        "type": "Conference",
         "title": "No-replication stochastic emulation for multi-output responses and application to seismic risk assessment.",
         "authors": "Yi, S. and Taflanidis, A.",
         "venue": "SIAM Conference on Uncertainty Quantification (UQ26)",
         "date": "March 22-25",
         "location": "Minnesota, MN, USA",
-        "order": 5
-      },
-      {
-        "year": "2026",
-        "type": "Conference",
-        "title": "Stochastic emulation for seismic risk assessment and the impact of intensity measure selection.",
-        "authors": "Yi, S., Taflanidis, A., Toofani Movaghar, P., Galasso, C., and Vamvatsikos, D.",
-        "venue": "Engineering Mechanics Institute Conference 2026 (EMI 2026)",
-        "date": "June 2-5",
-        "location": "Boulder, CO, USA",
         "order": 5
       },
       {
@@ -1430,7 +1485,26 @@ window.CMS_CONTENT = {
         "order": 33
       }
     ],
-    "dataset": []
+    "dataset": [
+      {
+        "year": "2023",
+        "type": "Dataset",
+        "title": "Peak EDP distribution from nonlinear time-history analysis for three story concrete moment resisting frame exposed to different stochastic ground motion models.",
+        "authors": "Kyprioti, A., Yi, S., and Taflanidis, A.",
+        "venue": "DesignSafe-CI",
+        "href": "https://doi.org/10.17603/ds2-ys6d-bp28",
+        "order": 0
+      },
+      {
+        "year": "2026",
+        "type": "Dataset",
+        "title": "Peak EDP distribution of concrete and steel moment resisting frame buildings subjected to seismic motions with uniform intensity measure coverage.",
+        "authors": "Yi, S., Toofani Movaghar, P., Taflanidis, A., Galasso, C., and Vamvatsikos, D.",
+        "venue": "DesignSafe-CI",
+        "href": "https://doi.org/10.17603/ds2-c4ye-8428",
+        "order": 1
+      }
+    ]
   },
   "news": [
     {
