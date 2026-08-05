@@ -269,6 +269,9 @@ collections:
           - { label: Description, name: description, widget: text }
           - { label: Profile link label, name: profileLabel, widget: string }
           - { label: Profile URL, name: profileHref, widget: string }
+          - { label: Currently recruiting?, name: recruiting, widget: boolean, default: true }
+          - { label: "Not recruiting: title", name: notRecruitingTitle, widget: string, required: false }
+          - { label: "Not recruiting: summary", name: notRecruitingSummary, widget: text, required: false }
           - { label: Opportunity label, name: positionLabel, widget: string }
           - { label: Opportunity title, name: positionTitle, widget: string }
           - { label: Opportunity summary, name: positionSummary, widget: text }

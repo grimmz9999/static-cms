@@ -49,7 +49,16 @@
   setHtml("[data-cms-teaching-feature]", teaching.feature ? `<button class="teaching-zoom" type="button" data-site-zoom-src="${esc(teaching.feature.src)}" data-site-zoom-alt="${esc(teaching.feature.caption || teaching.feature.alt)}" aria-label="Zoom image: ${esc(teaching.feature.alt)}"><img src="${esc(teaching.feature.src)}" alt="${esc(teaching.feature.alt)}"></button><figcaption>${esc(teaching.feature.caption || teaching.feature.alt)}</figcaption>` : "");
   setHtml("[data-cms-teaching-gallery]", (teaching.gallery || []).map((item) => `<figure><button class="teaching-zoom" type="button" data-site-zoom-src="${esc(item.src)}" data-site-zoom-alt="${esc(item.caption || item.alt)}" aria-label="Zoom image: ${esc(item.alt)}"><img src="${esc(item.src)}" alt="${esc(item.alt)}"></button><figcaption>${esc(item.caption || item.alt)}</figcaption></figure>`).join(""));
   
-  setText("[data-cms-contact-title]", contact.title); setText("[data-cms-contact-description]", contact.description); setText("[data-cms-contact-profile]", contact.profileLabel); setAttr("[data-cms-contact-profile]", "href", contact.profileHref); setText("[data-cms-position-label]", contact.positionLabel); setText("[data-cms-position-title]", contact.positionTitle); setText("[data-cms-position-summary]", contact.positionSummary); setText("[data-cms-guidance-label]", contact.guidanceLabel); setText("[data-cms-guidance-title]", contact.guidanceTitle); setHtml("[data-cms-guidance-body]", paragraphs(contact.guidance));
+  setText("[data-cms-contact-title]", contact.title); setText("[data-cms-contact-description]", contact.description); setText("[data-cms-contact-profile]", contact.profileLabel); setAttr("[data-cms-contact-profile]", "href", contact.profileHref); setText("[data-cms-position-label]", contact.positionLabel);
+  const recruiting = contact.recruiting !== false;
+  const guidanceDetails = document.querySelector("[data-cms-guidance-label]")?.closest("details");
+  if (recruiting) {
+    setText("[data-cms-position-title]", contact.positionTitle); setText("[data-cms-position-summary]", contact.positionSummary);
+    setText("[data-cms-guidance-label]", contact.guidanceLabel); setText("[data-cms-guidance-title]", contact.guidanceTitle); setHtml("[data-cms-guidance-body]", paragraphs(contact.guidance));
+  } else {
+    setText("[data-cms-position-title]", contact.notRecruitingTitle); setText("[data-cms-position-summary]", contact.notRecruitingSummary);
+    if (guidanceDetails) guidanceDetails.style.display = "none";
+  }
   setText("[data-cms-footer-name]", site.footer?.name); setHtml("[data-cms-footer-links]", (site.footer?.links || []).map((item) => `<a href="${esc(safeUrl(item.href))}"${externalAttrs(item.href)}>${esc(item.label)}</a>`).join(""));
   window.RESEARCH_CONTENT = research || []; window.HIDDEN_DRAWERS = content.hiddenDrawers || []; window.RESEARCH_INTRO = site.researchIntro || {}; window.PUBLICATION_VIEWS = publications || {}; window.NEWS_CONTENT = news || []; window.cmsContentReady = Promise.resolve(content);
 }());

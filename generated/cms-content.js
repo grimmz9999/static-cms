@@ -189,6 +189,9 @@ window.CMS_CONTENT = {
     "description": "Dr. Sang-ri Yi's email, office phone number, and office location can be found via the profile link below.",
     "profileLabel": "Rice profile",
     "profileHref": "https://profiles.rice.edu/faculty/sang-ri-yi",
+    "recruiting": false,
+    "notRecruitingTitle": "Not Currently Recruiting",
+    "notRecruitingSummary": "We are not actively recruiting PhD students or postdocs at this moment.",
     "positionLabel": "Open Positions",
     "positionTitle": "Fall 2026 PhD opportunities",
     "positionSummary": "One or two PhD students are expected, starting Fall 2026.",
@@ -897,11 +900,20 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Journal",
+        "title": "Stochastic emulation of seismic structural responses under recorded ground motions and the significance of intensity measure selection.",
+        "authors": "Yi, S., Toofani Movaghar, P., Taflanidis, A., Galasso, C., and Vamvatsikos, D.",
+        "venue": "Earthquake Engineering & Structural Dynamics",
+        "href": "https://doi.org/10.1002/eqe.70264",
+        "order": 0
+      },
+      {
+        "year": "2026",
+        "type": "Journal",
         "title": "Reliable building inventory imputation for regional-scale risk assessment: An uncertainty-guided framework using spatially-enhanced Transformers.",
         "authors": "Song, Z., Jiang, W., Yi, S., and Zhang, J.",
         "venue": "Reliability Engineering & System Safety",
         "href": "https://doi.org/10.1016/j.ress.2026.112436",
-        "order": 0
+        "order": 1
       },
       {
         "year": "2026",
@@ -910,7 +922,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, J., Yi, S., and Wang, Z.",
         "venue": "Reliability Engineering & System Safety",
         "href": "https://doi.org/10.1016/j.ress.2025.111474",
-        "order": 1
+        "order": 2
       },
       {
         "year": "2026",
@@ -920,7 +932,7 @@ window.CMS_CONTENT = {
         "authors": "Choi B., Yi, S., and Kim, T.",
         "venue": "Earthquake Engineering & Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.70087",
-        "order": 2
+        "order": 3
       },
       {
         "year": "2026",
@@ -929,7 +941,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, J., Yi, S., and Wang, Z.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2025.102668",
-        "order": 3
+        "order": 4
       },
       {
         "year": "2026",
@@ -938,7 +950,7 @@ window.CMS_CONTENT = {
         "authors": "Lee, S., Kim, M., and Yi, S.",
         "venue": "ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering",
         "href": "https://doi.org/10.1061/ajrua6.rueng-1688",
-        "order": 4
+        "order": 5
       },
       {
         "year": "2025",
@@ -948,7 +960,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Kim, T.",
         "venue": "International Journal of Disaster Risk Reduction",
         "href": "https://doi.org/10.1016/j.ijdrr.2025.105862",
-        "order": 5
+        "order": 6
       },
       {
         "year": "2025",
@@ -957,7 +969,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S., Taflanidis, A., Toofani Movaghar, P., and Galasso, C.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2025.102602",
-        "order": 6
+        "order": 7
       },
       {
         "year": "2025",
@@ -967,7 +979,7 @@ window.CMS_CONTENT = {
         "authors": "Taflanidis, A., Aakash, B.S., Yi, S., and Conte, J.P.",
         "venue": "Mechanical Systems and Signal Processing",
         "href": "https://doi.org/10.1016/j.ymssp.2025.113014",
-        "order": 7
+        "order": 8
       },
       {
         "year": "2025",
@@ -976,7 +988,7 @@ window.CMS_CONTENT = {
         "authors": "Zsarnoczay et al.",
         "venue": "Frontiers in Built Environment",
         "href": "https://doi.org/10.3389/fbuil.2025.1590479",
-        "order": 8
+        "order": 9
       },
       {
         "year": "2025",
@@ -986,7 +998,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, T., Yi, S., Kim, J. H., and Byun, J.E.",
         "venue": "International Journal of Disaster Risk Reduction",
         "href": "https://doi.org/10.1016/j.ijdrr.2025.105436",
-        "order": 9
+        "order": 10
       },
       {
         "year": "2025",
@@ -995,7 +1007,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Taflanidis, A.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2025.102578",
-        "order": 10
+        "order": 11
       },
       {
         "year": "2025",
@@ -1004,7 +1016,7 @@ window.CMS_CONTENT = {
         "authors": "Luo, X., Nandurdikar, V., Yi, S., Revell, A., Fourtakas, G., and Harish, A.B.",
         "venue": "Computational Particle Mechanics",
         "href": "https://doi.org/10.1007/s40571-025-00967-4",
-        "order": 11
+        "order": 12
       },
       {
         "year": "2025",
@@ -1013,7 +1025,7 @@ window.CMS_CONTENT = {
         "authors": "Lim, S., Yi, S., Kim, H., and Song, J.",
         "venue": "ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering",
         "href": "https://doi.org/10.1061/ajrua6.rueng-1439",
-        "order": 12
+        "order": 13
       },
       {
         "year": "2024",
@@ -1022,7 +1034,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Taflanidis, A.",
         "venue": "Earthquake Engineering and Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.4115",
-        "order": 13
+        "order": 14
       },
       {
         "year": "2024",
@@ -1031,7 +1043,7 @@ window.CMS_CONTENT = {
         "authors": "Byun, J.E. and Yi, S.",
         "venue": "npj Natural Hazards",
         "href": "https://doi.org/10.1038/s44304-024-00005-y",
-        "order": 14
+        "order": 15
       },
       {
         "year": "2024",
@@ -1041,7 +1053,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, T. and Yi, S.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2024.102479",
-        "order": 15
+        "order": 16
       },
       {
         "year": "2024",
@@ -1050,7 +1062,7 @@ window.CMS_CONTENT = {
         "authors": "Oh, S., Yi, S., and Wang, Z.",
         "venue": "Earthquake Engineering & Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.4198",
-        "order": 16
+        "order": 17
       },
       {
         "year": "2024",
@@ -1059,7 +1071,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, J., Yi, S., and Song, J.",
         "venue": "Engineering Structures",
         "href": "https://doi.org/10.1016/j.engstruct.2024.117873",
-        "order": 17
+        "order": 18
       },
       {
         "year": "2024",
@@ -1068,7 +1080,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, J., Yi, S., Park, J., and Kim, T.",
         "venue": "Journal of Engineering Mechanics",
         "href": "https://doi.org/10.1061/jenmdt.emeng-7800",
-        "order": 18
+        "order": 19
       },
       {
         "year": "2023",
@@ -1077,7 +1089,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Taflanidis, A.",
         "venue": "Journal of Engineering Mechanics",
         "href": "https://doi.org/10.1061/jenmdt.emeng-7083",
-        "order": 19
+        "order": 20
       },
       {
         "year": "2023",
@@ -1086,7 +1098,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Kim, T.",
         "venue": "Earthquake Engineering & Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.3991",
-        "order": 20
+        "order": 21
       },
       {
         "year": "2023",
@@ -1096,7 +1108,7 @@ window.CMS_CONTENT = {
         "authors": "Kim, J., Yi, S., and Song, J.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2022.102268",
-        "order": 21
+        "order": 22
       },
       {
         "year": "2021",
@@ -1105,7 +1117,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Song, J.",
         "venue": "Structural Safety",
         "href": "https://doi.org/10.1016/j.strusafe.2020.102027",
-        "order": 22
+        "order": 23
       },
       {
         "year": "2019",
@@ -1114,7 +1126,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S., Wang, Z., and Song, J.",
         "venue": "Earthquake Engineering and Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.3185",
-        "order": 23
+        "order": 24
       },
       {
         "year": "2018",
@@ -1123,7 +1135,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S. and Song, J.",
         "venue": "Sensors",
         "href": "https://doi.org/10.3390/s18113909",
-        "order": 24
+        "order": 25
       },
       {
         "year": "2018",
@@ -1133,7 +1145,7 @@ window.CMS_CONTENT = {
         "authors": "Yi, S., Wang, Z., and Song, J.",
         "venue": "Earthquake Engineering & Structural Dynamics",
         "href": "https://doi.org/10.1002/eqe.2985",
-        "order": 25
+        "order": 26
       }
     ],
     "conferences": [
