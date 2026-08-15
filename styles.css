@@ -17,6 +17,26 @@
   box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--rice-blue);
+  color: var(--white);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: top 150ms ease;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
 html {
   scroll-behavior: smooth;
 }
