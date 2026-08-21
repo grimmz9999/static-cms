@@ -220,8 +220,10 @@ img {
 .section-kicker {
   margin: 0 0 18px;
   color: var(--copper);
+  font-family: "Inter", Arial, sans-serif;
   font-size: 12px;
   font-weight: 800;
+  line-height: 1.5;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }

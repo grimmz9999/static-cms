@@ -74,10 +74,6 @@ window.CMS_CONTENT = {
           "href": "https://www.linkedin.com/in/sang-ri-yi-031b26117/"
         },
         {
-          "label": "GitHub",
-          "href": "https://github.com/yisangriB"
-        },
-        {
           "label": "Rice CEE",
           "href": "https://cee.rice.edu/"
         }
@@ -108,9 +104,7 @@ window.CMS_CONTENT = {
     "portrait": "assets/sangri-yi.png",
     "portraitAlt": "Dr. Sang-ri Yi",
     "paragraphs": [
-      "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice University. Her work connects *uncertainty quantification* (UQ) methods with open-source simulation tools and regional resilience analysis.",
-      "Before joining Rice, she was an Assistant Project Scientist at the University of California, Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/).",
-      "At SimCenter, she led the design and implementation of advanced UQ capabilities in open-source natural hazard modeling and simulation applications, including workflows for regional-scale surrogate modeling, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
+      "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice. Before joining Rice University, she was an Assistant Project Scientist at University of California at Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/). In SimCenter, she led the design and implementation of advanced uncertainty quantification (UQ) capabilities in open-source natural hazard modeling and simulation software applications, including workflows for regional-scale surrogate modeling applications, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
     ],
     "profiles": [
       {
@@ -1499,21 +1493,21 @@ window.CMS_CONTENT = {
     ],
     "dataset": [
       {
-        "year": "2023",
-        "type": "Dataset",
-        "title": "Peak EDP distribution from nonlinear time-history analysis for three story concrete moment resisting frame exposed to different stochastic ground motion models.",
-        "authors": "Kyprioti, A., Yi, S., and Taflanidis, A.",
-        "venue": "DesignSafe-CI",
-        "href": "https://doi.org/10.17603/ds2-ys6d-bp28",
-        "order": 0
-      },
-      {
         "year": "2026",
         "type": "Dataset",
         "title": "Peak EDP distribution of concrete and steel moment resisting frame buildings subjected to seismic motions with uniform intensity measure coverage.",
         "authors": "Yi, S., Toofani Movaghar, P., Taflanidis, A., Galasso, C., and Vamvatsikos, D.",
         "venue": "DesignSafe-CI",
         "href": "https://doi.org/10.17603/ds2-c4ye-8428",
+        "order": 0
+      },
+      {
+        "year": "2023",
+        "type": "Dataset",
+        "title": "Peak EDP distribution from nonlinear time-history analysis for three story concrete moment resisting frame exposed to different stochastic ground motion models.",
+        "authors": "Kyprioti, A., Yi, S., and Taflanidis, A.",
+        "venue": "DesignSafe-CI",
+        "href": "https://doi.org/10.17603/ds2-ys6d-bp28",
         "order": 1
       }
     ]
@@ -1521,7 +1515,7 @@ window.CMS_CONTENT = {
   "news": [
     {
       "year": "2026",
-      "dateLabel": "May 2026",
+      "dateLabel": "June 2026",
       "summary": [
         "Seonghyun Lim, Taeha Kim, and Sang-ri Yi presented at ",
         {
@@ -1535,10 +1529,16 @@ window.CMS_CONTENT = {
           "href": "https://www.icce2026.com/",
           "strong": false
         },
-        " and ",
+        ", ",
         {
           "text": "NHERI Computational Symposium",
           "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
+          "strong": false
+        },
+        ", and ",
+        {
+          "text": "CSM9",
+          "href": "https://www.csm9.org/",
           "strong": false
         },
         "."
@@ -1572,7 +1572,7 @@ window.CMS_CONTENT = {
           "caption": "with Larissa, Fei, and Ji-Eun"
         }
       ],
-      "slug": "2026-may-2026",
+      "slug": "2026-jun-2026",
       "order": 0
     },
     {
@@ -1585,7 +1585,7 @@ window.CMS_CONTENT = {
           "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
           "strong": false
         },
-        " at the University of Notre Dame."
+        " in Minneapolis."
       ],
       "images": [
         {
@@ -1602,7 +1602,7 @@ window.CMS_CONTENT = {
       "year": "2026",
       "dateLabel": "Feb 2026",
       "summary": [
-        "Seonghyun Lim presented a poster at the 2026 Energy HPC & AI Conference."
+        "Seonghyun Lim presented a poster at the 2026 Energy HPC & AI Conference in Houston."
       ],
       "images": [
         {
@@ -1674,19 +1674,19 @@ window.CMS_CONTENT = {
           "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
           "strong": false
         },
-        ", ",
+        " and ",
         {
           "text": "ICCE 2026",
           "href": "https://www.icce2026.com/",
           "strong": false
         },
-        ", and the ",
+        " next year, and joined the organizing committee for the ",
         {
           "text": "NHERI Computational Symposium 2026",
           "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
           "strong": false
         },
-        " next year."
+        " at UC Berkeley."
       ],
       "slug": "2025-nov-2025",
       "order": 4,

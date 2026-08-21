@@ -606,6 +606,8 @@ body.research-lightbox-open {
 
   .research-page-hero {
     padding-top: 78px;
+  }
+}
 
 .legacy-drawer-page h3 {
   margin: 28px 0 12px;
@@ -637,8 +639,11 @@ body.research-lightbox-open {
 }
 
 .legacy-drawer-image {
-  max-width: 82%;
+  max-width: 41%;
   margin: 22px auto 22px;
+  padding: 14px;
+  background: #ffffff;
+  border-radius: 6px;
 }
 
 .legacy-drawer-image img {
