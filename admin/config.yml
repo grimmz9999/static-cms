@@ -247,6 +247,7 @@ collections:
       - { label: Year, name: year, widget: string }
       - { label: Date label, name: dateLabel, widget: string }
       - { label: Summary (Markdown), name: summary, widget: markdown }
+      - { label: Additional summary paragraphs (Markdown), name: summaryParagraphs, widget: list, required: false, field: { label: Paragraph, name: paragraph, widget: markdown } }
       - { label: Detail heading, name: detailsTitle, widget: string, required: false }
       - { label: Detail bullet points (Markdown), name: details, widget: list, required: false, field: { label: Detail, name: detail, widget: markdown } }
       - label: Images

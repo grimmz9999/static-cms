@@ -263,7 +263,7 @@ const renderNewsArchive = () => {
         <article class="news-row" id="${newsId(item)}">
           <time>${escapeHtml(item.dateLabel)}</time>
           <div class="news-row-body">
-            <p>${richTextHtml(item.summary)}</p>
+            ${item.summaryParagraphs ? item.summaryParagraphs.map((paragraph) => `<p>${richTextHtml(paragraph)}</p>`).join("") : `<p>${richTextHtml(item.summary)}</p>`}
             ${detailItems}
             ${images}
           </div>

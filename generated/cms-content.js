@@ -1519,6 +1519,20 @@ window.CMS_CONTENT = {
       "summary": [
         "Sang-ri Yi joined the Probabilistic Methods Committee (PMC) of the Engineering Mechanics Institute (EMI)."
       ],
+      "summaryParagraphs": [
+        [
+          "Sang-ri Yi joined the EMI Probabilistic Methods Committee."
+        ],
+        [
+          "Sang-ri was also invited to give a talk and tutorial on regional-scale resilience at ",
+          {
+            "text": "NHERI SPARC",
+            "href": "https://www.designsafe-ci.org/learning-center/sparc/",
+            "strong": false
+          },
+          ", held at the University of Texas at Austin."
+        ]
+      ],
       "slug": "2026-aug-2026",
       "order": 0,
       "details": []
@@ -1612,7 +1626,13 @@ window.CMS_CONTENT = {
       "year": "2026",
       "dateLabel": "Feb 2026",
       "summary": [
-        "Seonghyun Lim presented a poster at the 2026 Energy HPC & AI Conference in Houston."
+        "Seonghyun Lim presented a poster at the ",
+        {
+          "text": "2026 Energy HPC & AI Conference",
+          "href": "https://kenkennedy.rice.edu/energyhpc-ai",
+          "strong": false
+        },
+        " in Houston."
       ],
       "images": [
         {
@@ -1644,13 +1664,31 @@ window.CMS_CONTENT = {
           "href": "https://en.snu.ac.kr/",
           "strong": false
         },
-        ". Sang-ri Yi joined the EMI Objective Resilience Committee and is co-organizing two mini-symposia at ",
-        {
-          "text": "EMI 2026",
-          "href": "https://www.emi-conference.org/",
-          "strong": false
-        },
         "."
+      ],
+      "summaryParagraphs": [
+        [
+          {
+            "text": "Taeha Kim",
+            "strong": true
+          },
+          " joined the group as a Visiting PhD Student from ",
+          {
+            "text": "Seoul National University",
+            "href": "https://en.snu.ac.kr/",
+            "strong": false
+          },
+          "."
+        ],
+        [
+          "Sang-ri Yi joined the EMI Objective Resilience Committee and is co-organizing two mini-symposia at ",
+          {
+            "text": "EMI 2026",
+            "href": "https://www.emi-conference.org/",
+            "strong": false
+          },
+          "."
+        ]
       ],
       "detailsTitle": "EMI 2026 mini-symposia",
       "details": [
@@ -1690,13 +1728,33 @@ window.CMS_CONTENT = {
           "href": "https://www.icce2026.com/",
           "strong": false
         },
-        " next year, and joined the organizing committee for the ",
-        {
-          "text": "NHERI Computational Symposium 2026",
-          "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
-          "strong": false
-        },
-        " at UC Berkeley."
+        " next year."
+      ],
+      "summaryParagraphs": [
+        [
+          "Sang-ri Yi will attend ",
+          {
+            "text": "SIAM-UQ26",
+            "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
+            "strong": false
+          },
+          " and ",
+          {
+            "text": "ICCE 2026",
+            "href": "https://www.icce2026.com/",
+            "strong": false
+          },
+          " next year."
+        ],
+        [
+          "Sang-ri also joined the organizing committee for the ",
+          {
+            "text": "NHERI Computational Symposium 2026",
+            "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
+            "strong": false
+          },
+          " at UC Berkeley."
+        ]
       ],
       "slug": "2025-nov-2025",
       "order": 5,
@@ -1710,13 +1768,25 @@ window.CMS_CONTENT = {
           "text": "Seonghyun Lim",
           "strong": true
         },
-        " joined the group as a Postdoctoral Researcher. Sang-ri Yi presented in the Department of Mechanical Engineering at ",
-        {
-          "text": "Rice University",
-          "href": "https://mech.rice.edu/",
-          "strong": false
-        },
-        "."
+        " joined the group as a Postdoctoral Researcher."
+      ],
+      "summaryParagraphs": [
+        [
+          {
+            "text": "Seonghyun Lim",
+            "strong": true
+          },
+          " joined the group as a Postdoctoral Researcher."
+        ],
+        [
+          "Sang-ri Yi presented in the Department of Mechanical Engineering at ",
+          {
+            "text": "Rice University",
+            "href": "https://mech.rice.edu/",
+            "strong": false
+          },
+          "."
+        ]
       ],
       "slug": "2025-oct-2025",
       "order": 6,

@@ -44,7 +44,7 @@ const adaptResearch = (area) => ({
   sections: (area.sections || []).map((section) => ({ ...section, body: (section.body || []).map(legacySegments), bullets: (section.bullets || []).map(legacySegments) })),
   examples: (area.examples || []).map((example) => ({ ...example, body: (example.body || []).map(legacySegments), bullets: (example.bullets || []).map(legacySegments) }))
 });
-const adaptNews = (item) => ({ ...item, summary: legacySegments(item.summary), details: (item.details || []).map(legacySegments) });
+const adaptNews = (item) => ({ ...item, summary: legacySegments(item.summary), summaryParagraphs: item.summaryParagraphs ? item.summaryParagraphs.map(legacySegments) : undefined, details: (item.details || []).map(legacySegments) });
 
 const site = await readJson(join(contentRoot, "site.json"));
 const bio = await readJson(join(contentRoot, "bio.json"));

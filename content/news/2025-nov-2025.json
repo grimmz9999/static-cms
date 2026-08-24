@@ -1,7 +1,11 @@
 {
   "year": "2025",
   "dateLabel": "Nov 2025",
-  "summary": "Sang-ri Yi will attend [SIAM-UQ26](https://www.siam.org/conferences-events/siam-conferences/uq26/) and [ICCE 2026](https://www.icce2026.com/) next year, and joined the organizing committee for the [NHERI Computational Symposium 2026](https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/) at UC Berkeley.",
+  "summary": "Sang-ri Yi will attend [SIAM-UQ26](https://www.siam.org/conferences-events/siam-conferences/uq26/) and [ICCE 2026](https://www.icce2026.com/) next year.",
+  "summaryParagraphs": [
+    "Sang-ri Yi will attend [SIAM-UQ26](https://www.siam.org/conferences-events/siam-conferences/uq26/) and [ICCE 2026](https://www.icce2026.com/) next year.",
+    "Sang-ri also joined the organizing committee for the [NHERI Computational Symposium 2026](https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/) at UC Berkeley."
+  ],
   "slug": "2025-nov-2025",
   "order": 5,
   "details": []
