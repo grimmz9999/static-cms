@@ -100,7 +100,7 @@ window.CMS_CONTENT = {
   },
   "bio": {
     "kicker": "About Sang-ri Yi",
-    "heading": "Bridging open-source simulation, uncertainty quantification, and infrastructure resilience.",
+    "heading": "Bridging uncertainty quantification and infrastructure resilience.",
     "portrait": "assets/sangri-yi.png",
     "portraitAlt": "Dr. Sang-ri Yi",
     "paragraphs": [
