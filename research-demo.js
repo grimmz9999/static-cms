@@ -90,7 +90,7 @@
     return `
       <section class="research-full-area legacy-drawer-page" id="${esc(area.slug)}">
         ${paragraphHtml(beforeImage)}
-        ${area.image ? `<figure class="legacy-drawer-image"><img src="${esc(area.image)}" alt="${esc(area.imageAlt || area.title)}"></figure>` : ""}
+        ${area.image ? `<button class="legacy-drawer-image" type="button" data-zoom-src="${esc(area.image)}" data-zoom-alt="${esc(area.imageAlt || area.title)}" aria-label="Zoom image: ${esc(area.imageAlt || area.title)}"><img src="${esc(area.image)}" alt="${esc(area.imageAlt || area.title)}"></button>` : ""}
         ${challengeIntro ? `<p>${inlineHtml(challengeIntro)}</p>` : ""}
         ${bulletListHtml(area.challengeBullets)}
         <h3>${esc(area.researchHeading || "Research Areas")}</h3>

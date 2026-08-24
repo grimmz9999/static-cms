@@ -46,7 +46,7 @@ window.CMS_CONTENT = {
       "text": "Led by Dr. Sang-ri Yi at Rice University, the lab develops scalable uncertainty quantification methods for complex, large-scale, multi-hazard simulation models.",
       "actions": [
         {
-          "label": "Meet Sang-ri",
+          "label": "About PI",
           "href": "#bio",
           "style": "primary"
         },
@@ -1515,6 +1515,16 @@ window.CMS_CONTENT = {
   "news": [
     {
       "year": "2026",
+      "dateLabel": "August 2026",
+      "summary": [
+        "Sang-ri Yi joined the Probabilistic Methods Committee (PMC) of the Engineering Mechanics Institute (EMI)."
+      ],
+      "slug": "2026-aug-2026",
+      "order": 0,
+      "details": []
+    },
+    {
+      "year": "2026",
       "dateLabel": "June 2026",
       "summary": [
         "Seonghyun Lim, Taeha Kim, and Sang-ri Yi presented at ",
@@ -1573,7 +1583,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-jun-2026",
-      "order": 0
+      "order": 1
     },
     {
       "year": "2026",
@@ -1595,7 +1605,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-mar-2026",
-      "order": 1,
+      "order": 2,
       "details": []
     },
     {
@@ -1617,7 +1627,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-feb-2026",
-      "order": 2,
+      "order": 3,
       "details": []
     },
     {
@@ -1662,7 +1672,7 @@ window.CMS_CONTENT = {
         ]
       ],
       "slug": "2025-dec-2025",
-      "order": 3
+      "order": 4
     },
     {
       "year": "2025",
@@ -1689,7 +1699,7 @@ window.CMS_CONTENT = {
         " at UC Berkeley."
       ],
       "slug": "2025-nov-2025",
-      "order": 4,
+      "order": 5,
       "details": []
     },
     {
@@ -1709,7 +1719,7 @@ window.CMS_CONTENT = {
         "."
       ],
       "slug": "2025-oct-2025",
-      "order": 5,
+      "order": 6,
       "details": []
     },
     {
@@ -1725,7 +1735,7 @@ window.CMS_CONTENT = {
         "."
       ],
       "slug": "2025-aug-2025",
-      "order": 6,
+      "order": 7,
       "details": []
     },
     {
@@ -1745,7 +1755,7 @@ window.CMS_CONTENT = {
         " as an Assistant Professor!"
       ],
       "slug": "2025-jul-2025",
-      "order": 7,
+      "order": 8,
       "details": []
     }
   ]

@@ -639,11 +639,15 @@ body.research-lightbox-open {
 }
 
 .legacy-drawer-image {
+  display: block;
   max-width: 41%;
   margin: 22px auto 22px;
   padding: 14px;
-  background: #ffffff;
+  border: 0;
   border-radius: 6px;
+  background: #ffffff;
+  cursor: zoom-in;
+  font: inherit;
 }
 
 .legacy-drawer-image img {
