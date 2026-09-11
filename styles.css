@@ -771,6 +771,20 @@ h3 {
   line-height: 1.28;
 }
 
+.team-member-bullets {
+  max-width: 860px;
+  margin: 0;
+  padding-left: 18px;
+  color: #141413;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.28;
+}
+
+.team-member-bullets li + li {
+  margin-top: 4px;
+}
+
 .team-topic-row,
 .team-member-links {
   display: flex;

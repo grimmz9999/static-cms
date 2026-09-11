@@ -887,6 +887,56 @@ window.CMS_CONTENT = {
         }
       ],
       "group": "current"
+    },
+    {
+      "role": "Visiting Ph.D. Student",
+      "bullets": [
+        "From Seoul National University, Oct 2025 - May 2026",
+        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
+      ],
+      "name": "Teaha Kim",
+      "order": 0,
+      "photo": "assets/team-teaha-kim.png",
+      "photoAlt": "Teaha Kim",
+      "links": [],
+      "group": "alumni"
+    },
+    {
+      "topics": [
+        "Uncertainty quantification"
+      ],
+      "bio": "Tianfeng joined the lab as a Ph.D. student in August 2026. Previously, she received her B.S. in Statistics from the Southern University of Science and Technology (SUSTech). Her research interests lie in uncertainty quantification, Bayesian inference, and probabilistic modeling.",
+      "name": "Tianfeng Liao",
+      "order": 1,
+      "photo": "assets/team-tianfeng-liao.png",
+      "role": "Ph.D. Student",
+      "photoAlt": "Tianfeng Liao",
+      "links": [
+        {
+          "label": "Email",
+          "href": "mailto:tl68@rice.edu"
+        }
+      ],
+      "group": "current"
+    },
+    {
+      "topics": [
+        "Stochastic dynamics",
+        "Surrogate modeling"
+      ],
+      "bio": "Weize joined the lab as a Ph.D. student in August 2026. His research will primarily focus on surrogate modelling to estimate structural seismic vulnerability, with a particular interest in identifying and interpreting uncertainties along the modeling process to support more reliable and informed seismic risk assessment.",
+      "name": "Weize Ou",
+      "order": 2,
+      "photo": "assets/team-weize-ou.png",
+      "role": "Ph.D. Student",
+      "photoAlt": "Weize Ou",
+      "links": [
+        {
+          "label": "Email",
+          "href": "mailto:wo16@rice.edu"
+        }
+      ],
+      "group": "current"
     }
   ],
   "publications": {
@@ -1206,7 +1256,7 @@ window.CMS_CONTENT = {
       {
         "year": "2026",
         "type": "Conference",
-        "title": "Surrogate-Aided Bayesian Calibration with Adaptive Learning Strategies.",
+        "title": "Surrogate-aided Bayesian Calibration with adaptive learning strategies.",
         "authors": "Taflanidis, A., Aakash B.S., Yi, S., and Conte, J.",
         "venue": "SIAM Conference on Uncertainty Quantification (UQ26)",
         "date": "March 22-25",
@@ -1515,11 +1565,32 @@ window.CMS_CONTENT = {
   "news": [
     {
       "year": "2026",
-      "dateLabel": "August 2026",
+      "dateLabel": "Aug 2026",
       "summary": [
-        "Sang-ri Yi joined the Probabilistic Methods Committee (PMC) of the Engineering Mechanics Institute (EMI)."
+        {
+          "text": "Weize Ou",
+          "strong": true
+        },
+        " and ",
+        {
+          "text": "Tianfeng Liao",
+          "strong": true
+        },
+        " joined the group as PhD students."
       ],
       "summaryParagraphs": [
+        [
+          {
+            "text": "Weize Ou",
+            "strong": true
+          },
+          " and ",
+          {
+            "text": "Tianfeng Liao",
+            "strong": true
+          },
+          " joined the group as PhD students."
+        ],
         [
           "Sang-ri Yi joined the EMI Probabilistic Methods Committee."
         ],
@@ -1539,7 +1610,7 @@ window.CMS_CONTENT = {
     },
     {
       "year": "2026",
-      "dateLabel": "June 2026",
+      "dateLabel": "Jun 2026",
       "summary": [
         "Seonghyun Lim, Taeha Kim, and Sang-ri Yi presented at ",
         {
@@ -1716,23 +1787,26 @@ window.CMS_CONTENT = {
       "year": "2025",
       "dateLabel": "Nov 2025",
       "summary": [
-        "Sang-ri Yi will attend ",
+        "Sang-ri Yi joined the organizing committee for the ",
         {
-          "text": "SIAM-UQ26",
-          "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
+          "text": "NHERI Computational Symposium 2026",
+          "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
           "strong": false
         },
-        " and ",
-        {
-          "text": "ICCE 2026",
-          "href": "https://www.icce2026.com/",
-          "strong": false
-        },
-        " next year."
+        " at UC Berkeley."
       ],
       "summaryParagraphs": [
         [
-          "Sang-ri Yi will attend ",
+          "Sang-ri Yi joined the organizing committee for the ",
+          {
+            "text": "NHERI Computational Symposium 2026",
+            "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
+            "strong": false
+          },
+          " at UC Berkeley."
+        ],
+        [
+          "Sang-ri will also attend ",
           {
             "text": "SIAM-UQ26",
             "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
@@ -1745,15 +1819,6 @@ window.CMS_CONTENT = {
             "strong": false
           },
           " next year."
-        ],
-        [
-          "Sang-ri also joined the organizing committee for the ",
-          {
-            "text": "NHERI Computational Symposium 2026",
-            "href": "https://simcenter.designsafe-ci.org/nheri-computational-symposium/2026/",
-            "strong": false
-          },
-          " at UC Berkeley."
         ]
       ],
       "slug": "2025-nov-2025",

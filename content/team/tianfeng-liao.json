@@ -1,0 +1,18 @@
+{
+  "topics": [
+    "Uncertainty quantification"
+  ],
+  "bio": "Tianfeng joined the lab as a Ph.D. student in August 2026. Previously, she received her B.S. in Statistics from the Southern University of Science and Technology (SUSTech). Her research interests lie in uncertainty quantification, Bayesian inference, and probabilistic modeling.",
+  "name": "Tianfeng Liao",
+  "order": 1,
+  "photo": "assets/team-tianfeng-liao.png",
+  "role": "Ph.D. Student",
+  "photoAlt": "Tianfeng Liao",
+  "links": [
+    {
+      "label": "Email",
+      "href": "mailto:tl68@rice.edu"
+    }
+  ],
+  "group": "current"
+}

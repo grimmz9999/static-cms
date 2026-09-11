@@ -1,0 +1,19 @@
+{
+  "topics": [
+    "Stochastic dynamics",
+    "Surrogate modeling"
+  ],
+  "bio": "Weize joined the lab as a Ph.D. student in August 2026. His research will primarily focus on surrogate modelling to estimate structural seismic vulnerability, with a particular interest in identifying and interpreting uncertainties along the modeling process to support more reliable and informed seismic risk assessment.",
+  "name": "Weize Ou",
+  "order": 2,
+  "photo": "assets/team-weize-ou.png",
+  "role": "Ph.D. Student",
+  "photoAlt": "Weize Ou",
+  "links": [
+    {
+      "label": "Email",
+      "href": "mailto:wo16@rice.edu"
+    }
+  ],
+  "group": "current"
+}

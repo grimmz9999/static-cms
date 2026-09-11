@@ -172,11 +172,12 @@ collections:
         name: group
         widget: select
         options: [current, alumni]
-      - { label: Role, name: role, widget: string }
+      - { label: Role, name: role, widget: string, required: false }
       - { label: Portrait, name: photo, widget: image }
       - { label: Portrait alt text, name: photoAlt, widget: string }
-      - { label: Biography, name: bio, widget: markdown }
-      - { label: Research topics, name: topics, widget: list, field: { label: Topic, name: topic, widget: string } }
+      - { label: Biography, name: bio, widget: markdown, required: false }
+      - { label: Bullet points (overrides biography when set), name: bullets, widget: list, required: false, field: { label: Bullet, name: bullet, widget: string } }
+      - { label: Research topics, name: topics, widget: list, field: { label: Topic, name: topic, widget: string }, required: false }
       - label: Profile links
         name: links
         widget: list
