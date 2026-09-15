@@ -1769,7 +1769,7 @@ window.CMS_CONTENT = {
             "href": "https://cdn.asce.org/asce-conferences/emi-conference.org/s3fs-public/EMI-2026-MS-NOV25.pdf#page=70",
             "strong": false
           },
-          ": objective resilience in civil infrastructure systems."
+          ": Uncertainty Quantification and System Reliability Methods for Regional Risk and Resilience Assessment."
         ],
         [
           {
@@ -1777,7 +1777,7 @@ window.CMS_CONTENT = {
             "href": "https://cdn.asce.org/asce-conferences/emi-conference.org/s3fs-public/EMI-2026-MS-NOV25.pdf#page=73",
             "strong": false
           },
-          ": uncertainty quantification and surrogate modeling for natural hazard engineering."
+          ": Reimagining Digital Twins through Artificial Intelligence and Probabilistic Reasoning for Infrastructure Resilience."
         ]
       ],
       "slug": "2025-dec-2025",
