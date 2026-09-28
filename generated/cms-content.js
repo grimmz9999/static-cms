@@ -1570,7 +1570,7 @@ window.CMS_CONTENT = {
         "Sang-ri Yi gave a ",
         {
           "text": "talk",
-          "href": "https://www.cive.uh.edu/sites/cive/files/seminars/2026/beyer-lecture-seminar_dr-sang-ri-yi_0.pdf",
+          "href": "https://www.cive.uh.edu/research/seminars/beyer-distinguished-lecture-archives",
           "strong": false
         },
         " at the Department of Civil and Environmental Engineering at the University of Houston."
@@ -1580,7 +1580,7 @@ window.CMS_CONTENT = {
           "Sang-ri Yi gave a ",
           {
             "text": "talk",
-            "href": "https://www.cive.uh.edu/sites/cive/files/seminars/2026/beyer-lecture-seminar_dr-sang-ri-yi_0.pdf",
+            "href": "https://www.cive.uh.edu/research/seminars/beyer-distinguished-lecture-archives",
             "strong": false
           },
           " at the Department of Civil and Environmental Engineering at the University of Houston."
