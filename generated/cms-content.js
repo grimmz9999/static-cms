@@ -891,7 +891,7 @@ window.CMS_CONTENT = {
     {
       "role": "Visiting Ph.D. Student",
       "bullets": [
-        "From Seoul National University, Oct 2025 - May 2026",
+        "From [Seoul National University](https://systemreliability.wordpress.com/), Oct 2025 - May 2026",
         "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
       ],
       "name": "Teaha Kim",
@@ -1759,7 +1759,7 @@ window.CMS_CONTENT = {
         " joined the group as a Visiting PhD Student from ",
         {
           "text": "Seoul National University",
-          "href": "https://en.snu.ac.kr/",
+          "href": "https://systemreliability.wordpress.com/",
           "strong": false
         },
         "."
@@ -1773,7 +1773,7 @@ window.CMS_CONTENT = {
           " joined the group as a Visiting PhD Student from ",
           {
             "text": "Seoul National University",
-            "href": "https://en.snu.ac.kr/",
+            "href": "https://systemreliability.wordpress.com/",
             "strong": false
           },
           "."

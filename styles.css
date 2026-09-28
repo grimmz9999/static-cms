@@ -785,6 +785,14 @@ h3 {
   margin-top: 4px;
 }
 
+.team-member-bio a,
+.team-member-bullets a {
+  color: var(--rice-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .team-topic-row,
 .team-member-links {
   display: flex;
