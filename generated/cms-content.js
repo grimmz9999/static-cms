@@ -1567,11 +1567,23 @@ window.CMS_CONTENT = {
       "year": "2026",
       "dateLabel": "Sep 2026",
       "summary": [
-        "Sang-ri Yi gave an invited talk at the Department of Civil and Environmental Engineering at the University of Houston."
+        "Sang-ri Yi gave an invited ",
+        {
+          "text": "talk",
+          "href": "https://www.cive.uh.edu/research/seminars/beyer-distinguished-lecture-archives",
+          "strong": false
+        },
+        " at the Department of Civil and Environmental Engineering at the University of Houston."
       ],
       "summaryParagraphs": [
         [
-          "Sang-ri Yi gave an invited talk at the Department of Civil and Environmental Engineering at the University of Houston."
+          "Sang-ri Yi gave an invited ",
+          {
+            "text": "talk",
+            "href": "https://www.cive.uh.edu/research/seminars/beyer-distinguished-lecture-archives",
+            "strong": false
+          },
+          " at the Department of Civil and Environmental Engineering at the University of Houston."
         ]
       ],
       "slug": "2026-sep-2026",
