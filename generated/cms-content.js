@@ -1565,6 +1565,21 @@ window.CMS_CONTENT = {
   "news": [
     {
       "year": "2026",
+      "dateLabel": "Sep 2026",
+      "summary": [
+        "Sang-ri Yi gave a talk at the Department of Civil and Environmental Engineering at the University of Houston."
+      ],
+      "summaryParagraphs": [
+        [
+          "Sang-ri Yi gave a talk at the Department of Civil and Environmental Engineering at the University of Houston."
+        ]
+      ],
+      "slug": "2026-sep-2026",
+      "order": 0,
+      "details": []
+    },
+    {
+      "year": "2026",
       "dateLabel": "Aug 2026",
       "summary": [
         {
@@ -1605,7 +1620,7 @@ window.CMS_CONTENT = {
         ]
       ],
       "slug": "2026-aug-2026",
-      "order": 0,
+      "order": 1,
       "details": []
     },
     {
@@ -1668,7 +1683,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-jun-2026",
-      "order": 1
+      "order": 2
     },
     {
       "year": "2026",
@@ -1690,7 +1705,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-mar-2026",
-      "order": 2,
+      "order": 3,
       "details": []
     },
     {
@@ -1718,7 +1733,7 @@ window.CMS_CONTENT = {
         }
       ],
       "slug": "2026-feb-2026",
-      "order": 3,
+      "order": 4,
       "details": []
     },
     {
@@ -1781,7 +1796,7 @@ window.CMS_CONTENT = {
         ]
       ],
       "slug": "2025-dec-2025",
-      "order": 4
+      "order": 5
     },
     {
       "year": "2025",
@@ -1822,7 +1837,7 @@ window.CMS_CONTENT = {
         ]
       ],
       "slug": "2025-nov-2025",
-      "order": 5,
+      "order": 6,
       "details": []
     },
     {
@@ -1854,7 +1869,7 @@ window.CMS_CONTENT = {
         ]
       ],
       "slug": "2025-oct-2025",
-      "order": 6,
+      "order": 7,
       "details": []
     },
     {
@@ -1870,7 +1885,7 @@ window.CMS_CONTENT = {
         "."
       ],
       "slug": "2025-aug-2025",
-      "order": 7,
+      "order": 8,
       "details": []
     },
     {
@@ -1890,7 +1905,7 @@ window.CMS_CONTENT = {
         " as an Assistant Professor!"
       ],
       "slug": "2025-jul-2025",
-      "order": 8,
+      "order": 9,
       "details": []
     }
   ]
