@@ -1856,7 +1856,7 @@ window.CMS_CONTENT = {
           " joined the group as a Postdoctoral Researcher."
         ],
         [
-          "Sang-ri Yi presented in the Department of Mechanical Engineering at ",
+          "Sang-ri Yi gave a talk at the Department of Mechanical Engineering at ",
           {
             "text": "Rice University",
             "href": "https://mech.rice.edu/",
