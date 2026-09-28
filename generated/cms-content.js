@@ -1819,21 +1819,6 @@ window.CMS_CONTENT = {
             "strong": false
           },
           " at UC Berkeley."
-        ],
-        [
-          "Sang-ri will also attend ",
-          {
-            "text": "SIAM-UQ26",
-            "href": "https://www.siam.org/conferences-events/siam-conferences/uq26/",
-            "strong": false
-          },
-          " and ",
-          {
-            "text": "ICCE 2026",
-            "href": "https://www.icce2026.com/",
-            "strong": false
-          },
-          " next year."
         ]
       ],
       "slug": "2025-nov-2025",
