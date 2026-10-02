@@ -1,2 +1,5 @@
 node_modules/
 admin/decap-cms.js
+
+# Written only by prerender builds (Netlify, or PRERENDER=1 locally)
+llms.txt
