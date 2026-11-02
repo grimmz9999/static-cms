@@ -40,7 +40,6 @@ collections:
             name: hero
             widget: object
             fields:
-              - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: title, widget: string }
               - { label: Description, name: text, widget: text }
               - label: Buttons
@@ -57,7 +56,6 @@ collections:
             name: researchHeading
             widget: object
             fields:
-              - { label: Section label, name: kicker, widget: string }
               - { label: Heading, name: title, widget: string }
           - label: Research intro
             name: researchIntro
@@ -111,7 +109,6 @@ collections:
         file: content/bio.json
         format: json
         fields:
-          - { label: Section label, name: kicker, widget: string }
           - { label: Heading, name: heading, widget: string }
           - { label: Portrait, name: portrait, widget: image }
           - { label: Portrait alt text, name: portraitAlt, widget: string }
@@ -216,7 +213,7 @@ collections:
         file: content/teaching.json
         format: json
         fields:
-          - { label: Section label, name: kicker, widget: string }
+          - { label: Section heading, name: heading, widget: string }
           - { label: Course title, name: title, widget: string }
           - { label: Metadata, name: meta, widget: list, field: { label: Item, name: item, widget: string } }
           - { label: Description, name: description, widget: text }

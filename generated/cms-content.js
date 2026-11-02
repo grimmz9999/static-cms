@@ -41,7 +41,6 @@ window.CMS_CONTENT = {
       }
     ],
     "hero": {
-      "eyebrow": "Computational UQ for resilient infrastructure",
       "title": "Engineering Risk, Uncertainty, and Resilience Lab",
       "text": "Led by Dr. Sang-ri Yi at Rice University, the lab develops scalable uncertainty quantification methods for complex, large-scale, multi-hazard simulation models.",
       "actions": [
@@ -58,8 +57,7 @@ window.CMS_CONTENT = {
       ]
     },
     "researchHeading": {
-      "kicker": "Research",
-      "title": "Research directions."
+      "title": "Research directions"
     },
     "teamHeading": "Team",
     "footer": {
@@ -99,8 +97,7 @@ window.CMS_CONTENT = {
     }
   },
   "bio": {
-    "kicker": "About Sang-ri Yi",
-    "heading": "Bridging uncertainty quantification and infrastructure resilience.",
+    "heading": "Bridging uncertainty quantification and infrastructure resilience",
     "portrait": "assets/sangri-yi.png",
     "portraitAlt": "Dr. Sang-ri Yi",
     "paragraphs": [
@@ -137,7 +134,7 @@ window.CMS_CONTENT = {
     ]
   },
   "teaching": {
-    "kicker": "Teaching",
+    "heading": "Teaching",
     "title": "CEVE456/556 Uncertainty Quantification",
     "meta": [
       "Fall semesters",
@@ -866,38 +863,16 @@ window.CMS_CONTENT = {
   ],
   "team": [
     {
-      "topics": [
-        "Uncertainty quantification in natural hazards",
-        "System-level resilience assessment"
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Oct 2025 - Sep 2026",
+        "Critical phenomena of structural failures and adaptation of stochastic emulation to shift of distribution",
+        "Currently a postdoctoral scholar at University of Michigan"
       ],
-      "bio": "Seonghyun is a postdoctoral researcher at Rice University. His research focuses on uncertainty quantification and stochastic modeling for seismic risk analysis and resilience appraisal of complex infrastructure systems under extreme events.",
-      "name": "Dr. Seonghyun Lim",
+      "name": "Seonghyun Lim",
       "order": 0,
       "photo": "assets/team-seonghyun-lim.png",
-      "role": "Postdoctoral Researcher",
-      "photoAlt": "Dr. Seonghyun Lim",
-      "links": [
-        {
-          "label": "Email",
-          "href": "mailto:sl68@rice.edu"
-        },
-        {
-          "label": "Google Scholar",
-          "href": "https://scholar.google.ca/citations?user=xd2oqD0AAAAJ&hl=en"
-        }
-      ],
-      "group": "current"
-    },
-    {
-      "role": "Visiting Ph.D. Student",
-      "bullets": [
-        "From [Seoul National University](https://systemreliability.wordpress.com/), Oct 2025 - May 2026",
-        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
-      ],
-      "name": "Teaha Kim",
-      "order": 0,
-      "photo": "assets/team-teaha-kim.png",
-      "photoAlt": "Teaha Kim",
+      "photoAlt": "Seonghyun Lim",
       "links": [],
       "group": "alumni"
     },
@@ -918,6 +893,19 @@ window.CMS_CONTENT = {
         }
       ],
       "group": "current"
+    },
+    {
+      "role": "Visiting Ph.D. Student",
+      "bullets": [
+        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
+        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
+      ],
+      "name": "Teaha Kim",
+      "order": 1,
+      "photo": "assets/team-teaha-kim.png",
+      "photoAlt": "Teaha Kim",
+      "links": [],
+      "group": "alumni"
     },
     {
       "topics": [
@@ -1622,7 +1610,7 @@ window.CMS_CONTENT = {
           "Sang-ri Yi joined the EMI Probabilistic Methods Committee."
         ],
         [
-          "Sang-ri was also invited to give a talk and tutorial on regional-scale resilience at ",
+          "Sang-ri was invited to give a talk and tutorial on regional-scale resilience at ",
           {
             "text": "NHERI SPARC",
             "href": "https://www.designsafe-ci.org/learning-center/sparc/",

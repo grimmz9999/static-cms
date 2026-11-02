@@ -1009,9 +1009,12 @@ h3 {
   max-width: 640px;
 }
 
-.teaching-copy h2 {
+.teaching-course-title {
   margin-bottom: 0;
-  font-size: 48px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 34px;
+  font-weight: 650;
+  line-height: 1.1;
 }
 
 .teaching-meta {
@@ -1666,6 +1669,10 @@ body.site-lightbox-open {
 
   h2 {
     font-size: 34px;
+  }
+
+  .teaching-course-title {
+    font-size: 24px;
   }
 
   .hero-text,
