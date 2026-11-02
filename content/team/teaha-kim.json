@@ -1,11 +1,11 @@
 {
   "role": "Visiting Ph.D. Student",
   "bullets": [
-    "From [Seoul National University](https://systemreliability.wordpress.com/), Oct 2025 - May 2026",
+    "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
     "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
   ],
   "name": "Teaha Kim",
-  "order": 0,
+  "order": 1,
   "photo": "assets/team-teaha-kim.png",
   "photoAlt": "Teaha Kim",
   "links": [],
