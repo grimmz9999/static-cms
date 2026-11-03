@@ -252,11 +252,21 @@
     root.querySelectorAll("[data-research-open]").forEach((button) => {
       button.addEventListener("click", () => openDrawer(button.dataset.researchOpen));
     });
-    document.querySelectorAll("[data-hidden-drawer-open]").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        openDrawer(link.dataset.hiddenDrawerOpen);
+    const heroOverview = document.querySelector("[data-hero-overview]");
+    document.querySelectorAll("[data-hero-overview-toggle]").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const area = hiddenDrawers.find((item) => item.slug === toggle.dataset.heroOverviewToggle);
+        if (!heroOverview || !area) return;
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        if (!expanded && !heroOverview.innerHTML.trim()) heroOverview.innerHTML = legacyAreaHtml(area);
+        heroOverview.hidden = expanded;
+        toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+        toggle.textContent = expanded ? "Learn more" : "Show less";
       });
+    });
+    heroOverview?.addEventListener("click", (event) => {
+      const zoomButton = event.target.closest("[data-zoom-src]");
+      if (zoomButton) openLightbox(zoomButton.dataset.zoomSrc, "");
     });
     root.querySelectorAll("[data-drawer-close]").forEach((button) => {
       button.addEventListener("click", closeDrawer);

@@ -6,7 +6,7 @@ window.CMS_CONTENT = {
       "description": "Engineering Risk, Uncertainty, and Resilience Lab at Rice University."
     },
     "brand": {
-      "mark": "UQ",
+      "logo": "assets/lab-logo.png",
       "name": "Engineering Risk, Uncertainty, and Resilience Lab",
       "subtitle": "Rice Civil & Environmental Engineering"
     },
@@ -42,19 +42,8 @@ window.CMS_CONTENT = {
     ],
     "hero": {
       "title": "Engineering Risk, Uncertainty, and Resilience Lab",
-      "text": "Led by Dr. Sang-ri Yi at Rice University, the lab develops scalable uncertainty quantification methods for complex, large-scale, multi-hazard simulation models.",
-      "actions": [
-        {
-          "label": "About PI",
-          "href": "#bio",
-          "style": "primary"
-        },
-        {
-          "label": "Explore Research",
-          "href": "#research",
-          "style": "secondary"
-        }
-      ]
+      "text": "The lab develops computational uncertainty quantification (UQ) methods for complex, large-scale, multi-hazard simulations, with the goal of supporting resilient urban infrastructure.",
+      "actions": []
     },
     "researchHeading": {
       "title": "Research areas"
@@ -101,7 +90,7 @@ window.CMS_CONTENT = {
     "portrait": "assets/sangri-yi.png",
     "portraitAlt": "Dr. Sang-ri Yi",
     "paragraphs": [
-      "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at Rice. Before joining Rice University, she was an Assistant Project Scientist at University of California at Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/). In SimCenter, she led the design and implementation of advanced uncertainty quantification (UQ) capabilities in open-source natural hazard modeling and simulation software applications, including workflows for regional-scale surrogate modeling applications, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
+      "Dr. Sang-ri Yi is an Assistant Professor of Civil and Environmental Engineering at [Rice University](https://cee.rice.edu/). Before joining Rice, she was an Assistant Project Scientist at University of California at Berkeley and a Senior Software Developer at [NHERI SimCenter](https://simcenter.designsafe-ci.org/). In SimCenter, she led the design and implementation of advanced uncertainty quantification (UQ) capabilities in open-source natural hazard modeling and simulation software applications, including workflows for regional-scale surrogate modeling applications, variance-based sensitivity analysis, probabilistic inventory imputation, and multi-fidelity UQ."
     ],
     "profiles": [
       {
@@ -137,7 +126,7 @@ window.CMS_CONTENT = {
     "heading": "Teaching",
     "title": "CEVE456/556 Uncertainty Quantification",
     "meta": [
-      "Fall semesters",
+      "Spring semesters",
       "Civil & Environmental Engineering",
       "Graduate / advanced undergraduate"
     ],
@@ -712,7 +701,7 @@ window.CMS_CONTENT = {
       "sourceUrl": "https://uncertainty.blogs.rice.edu/",
       "sourceLabel": "Original Rice lab homepage",
       "image": "assets/legacy-uq-overview.png",
-      "imageAlt": "Uncertainty quantification overview graphic from the original Rice lab homepage",
+      "imageAlt": "Role of UQ: uncertainty representation, computationally efficient propagation, and uncertainty reduction",
       "summary": "A hidden drawer that transfers the original Rice lab homepage welcome, UQ mission, challenge list, research areas, image, and source links into the current site.",
       "paragraphs": [
         [
@@ -725,20 +714,7 @@ window.CMS_CONTENT = {
           "."
         ],
         [
-          "The lab develops computational ",
-          {
-            "text": "uncertainty quantification (UQ)",
-            "strong": true
-          },
-          " methods for complex, large-scale, multi-hazard simulations, with the goal of supporting ",
-          {
-            "text": "resilient urban infrastructure",
-            "strong": true
-          },
-          "."
-        ],
-        [
-          "Its engineering UQ scope includes probabilistic modeling, efficient uncertainty propagation, and reduction of uncertainty, with emphasis on ",
+          "Our work spans probabilistic modeling, efficient uncertainty propagation, and reduction of uncertainty, with emphasis on ",
           {
             "text": "scalable and robust",
             "strong": true
@@ -804,7 +780,7 @@ window.CMS_CONTENT = {
       ],
       "researchHeading": "Research Areas",
       "researchIntro": [
-        "The original homepage points to ",
+        "The lab develops ",
         {
           "text": "computational UQ methods",
           "strong": true
@@ -877,19 +853,6 @@ window.CMS_CONTENT = {
       "group": "alumni"
     },
     {
-      "role": "Visiting Ph.D. Student",
-      "bullets": [
-        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
-        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
-      ],
-      "name": "Teaha Kim",
-      "order": 1,
-      "photo": "assets/team-teaha-kim.png",
-      "photoAlt": "Teaha Kim",
-      "links": [],
-      "group": "alumni"
-    },
-    {
       "topics": [
         "Uncertainty quantification"
       ],
@@ -906,6 +869,19 @@ window.CMS_CONTENT = {
         }
       ],
       "group": "current"
+    },
+    {
+      "role": "Visiting Ph.D. Student",
+      "bullets": [
+        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
+        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
+      ],
+      "name": "Teaha Kim",
+      "order": 1,
+      "photo": "assets/team-teaha-kim.png",
+      "photoAlt": "Teaha Kim",
+      "links": [],
+      "group": "alumni"
     },
     {
       "topics": [

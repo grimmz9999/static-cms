@@ -6,12 +6,11 @@
   "sourceUrl": "https://uncertainty.blogs.rice.edu/",
   "sourceLabel": "Original Rice lab homepage",
   "image": "assets/legacy-uq-overview.png",
-  "imageAlt": "Uncertainty quantification overview graphic from the original Rice lab homepage",
+  "imageAlt": "Role of UQ: uncertainty representation, computationally efficient propagation, and uncertainty reduction",
   "summary": "A hidden drawer that transfers the original Rice lab homepage welcome, UQ mission, challenge list, research areas, image, and source links into the current site.",
   "paragraphs": [
     "Welcome to the Engineering Risk, Uncertainty, and Resilience Lab at [Rice CEE](https://cee.rice.edu/).",
-    "The lab develops computational **uncertainty quantification (UQ)** methods for complex, large-scale, multi-hazard simulations, with the goal of supporting **resilient urban infrastructure**.",
-    "Its engineering UQ scope includes probabilistic modeling, efficient uncertainty propagation, and reduction of uncertainty, with emphasis on **scalable and robust** **statistical tools** that can be **readily deployed to real-world engineering problems.**",
+    "Our work spans probabilistic modeling, efficient uncertainty propagation, and reduction of uncertainty, with emphasis on **scalable and robust** **statistical tools** that can be **readily deployed to real-world engineering problems.**",
     "Modern natural-hazard risk and resilience assessment often involves **multi-scale**, **multi-fidelity**, and **complex infrastructural systems**. Key challenges include:"
   ],
   "challengeBullets": [
@@ -26,7 +25,7 @@
     "High computational memory and processor demands"
   ],
   "researchHeading": "Research Areas",
-  "researchIntro": "The original homepage points to **computational UQ methods** for understanding uncertainty, risk, and resilience in infrastructure systems under hazards. Topics of interest include:",
+  "researchIntro": "The lab develops **computational UQ methods** for understanding uncertainty, risk, and resilience in infrastructure systems under hazards. Topics of interest include:",
   "researchBullets": [
     "Stochastic and deterministic surrogate modeling",
     "Adaptive design of computer experiments",

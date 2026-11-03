@@ -93,7 +93,7 @@
 .research-compact-meta span {
   display: block;
   margin-bottom: 3px;
-  color: var(--copper);
+  color: var(--rice-blue);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -648,6 +648,15 @@ body.research-lightbox-open {
   background: #ffffff;
   cursor: zoom-in;
   font: inherit;
+}
+
+.hero-overview .research-full-area {
+  padding: 22px 0 6px;
+}
+
+.hero-overview .legacy-drawer-image {
+  max-width: 360px;
+  margin-left: 0;
 }
 
 .legacy-drawer-image img {

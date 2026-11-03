@@ -29,10 +29,10 @@
   const contact = content.contact || site.contact || {};
   document.title = site.metadata?.title || document.title;
   setAttr('meta[name="description"]', "content", site.metadata?.description);
-  setText("[data-cms-brand-mark]", site.brand?.mark); setText("[data-cms-brand-name]", site.brand?.name); setText("[data-cms-brand-subtitle]", site.brand?.subtitle);
+  setAttr("[data-cms-brand-logo]", "src", site.brand?.logo); setText("[data-cms-brand-name]", site.brand?.name); setText("[data-cms-brand-subtitle]", site.brand?.subtitle);
   setHtml("[data-cms-nav]", (site.navigation || []).map((item) => `<a href="${esc(safeUrl(item.href))}">${esc(item.label)}</a>`).join(""));
-  setText("[data-cms-hero-title]", site.hero?.title); setHtml("[data-cms-hero-text]", `${esc(site.hero?.text)} <a class="contact-profile-link hero-learn-more" href="#legacy-overview" data-hidden-drawer-open="legacy-overview">Learn more</a>`);
-  setHtml("[data-cms-hero-actions]", (site.hero?.actions || []).map((item) => `<a class="button ${esc(item.style || "secondary")}" href="${esc(safeUrl(item.href))}">${esc(item.label)}</a>`).join(""));
+  setText("[data-cms-hero-title]", site.hero?.title); setText("[data-cms-hero-text]", site.hero?.text);
+  setHtml("[data-cms-hero-actions]", (site.hero?.actions || []).map((item) => `<a class="button ${esc(item.style || "secondary")}" href="${esc(safeUrl(item.href))}">${esc(item.label)}</a>`).join("") + '<button class="button primary hero-learn-more" type="button" aria-expanded="false" aria-controls="hero-overview" data-hero-overview-toggle="legacy-overview">Learn more</button>');
   setText("[data-cms-bio-heading]", bio?.heading); setAttr("[data-cms-bio-image]", "src", bio?.portrait); setAttr("[data-cms-bio-image]", "alt", bio?.portraitAlt);
   setHtml("[data-cms-bio-paragraphs]", paragraphs(bio?.paragraphs));
   setHtml("[data-cms-bio-profiles]", (bio?.profiles || []).map((item) => `<a href="${esc(safeUrl(item.href))}"${externalAttrs(item.href)}><span>${esc(item.label)}</span></a>`).join(""));

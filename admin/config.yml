@@ -27,7 +27,7 @@ collections:
             name: brand
             widget: object
             fields:
-              - { label: Mark, name: mark, widget: string }
+              - { label: Logo, name: logo, widget: image }
               - { label: Lab name, name: name, widget: string }
               - { label: Subtitle, name: subtitle, widget: string }
           - label: Navigation
