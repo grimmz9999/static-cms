@@ -57,7 +57,7 @@ window.CMS_CONTENT = {
       ]
     },
     "researchHeading": {
-      "title": "Research directions"
+      "title": "Research areas"
     },
     "teamHeading": "Team",
     "footer": {
@@ -97,7 +97,7 @@ window.CMS_CONTENT = {
     }
   },
   "bio": {
-    "heading": "Bridging uncertainty quantification and infrastructure resilience",
+    "heading": "Principal Investigator",
     "portrait": "assets/sangri-yi.png",
     "portraitAlt": "Dr. Sang-ri Yi",
     "paragraphs": [
@@ -877,19 +877,6 @@ window.CMS_CONTENT = {
       "group": "alumni"
     },
     {
-      "role": "Visiting Ph.D. Student",
-      "bullets": [
-        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
-        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
-      ],
-      "name": "Teaha Kim",
-      "order": 1,
-      "photo": "assets/team-teaha-kim.png",
-      "photoAlt": "Teaha Kim",
-      "links": [],
-      "group": "alumni"
-    },
-    {
       "topics": [
         "Uncertainty quantification"
       ],
@@ -906,6 +893,19 @@ window.CMS_CONTENT = {
         }
       ],
       "group": "current"
+    },
+    {
+      "role": "Visiting Ph.D. Student",
+      "bullets": [
+        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
+        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
+      ],
+      "name": "Teaha Kim",
+      "order": 1,
+      "photo": "assets/team-teaha-kim.png",
+      "photoAlt": "Teaha Kim",
+      "links": [],
+      "group": "alumni"
     },
     {
       "topics": [
