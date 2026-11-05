@@ -46,7 +46,7 @@ window.CMS_CONTENT = {
       "actions": []
     },
     "researchHeading": {
-      "title": "Research areas"
+      "title": "Research Areas"
     },
     "teamHeading": "Team",
     "footer": {
@@ -853,19 +853,6 @@ window.CMS_CONTENT = {
       "group": "alumni"
     },
     {
-      "role": "Visiting Ph.D. Student",
-      "bullets": [
-        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
-        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
-      ],
-      "name": "Teaha Kim",
-      "order": 1,
-      "photo": "assets/team-teaha-kim.png",
-      "photoAlt": "Teaha Kim",
-      "links": [],
-      "group": "alumni"
-    },
-    {
       "topics": [
         "Uncertainty quantification"
       ],
@@ -882,6 +869,19 @@ window.CMS_CONTENT = {
         }
       ],
       "group": "current"
+    },
+    {
+      "role": "Visiting Ph.D. Student",
+      "bullets": [
+        "Dec 2025 - May 2026, From [Seoul National University](https://systemreliability.wordpress.com/)",
+        "Real-time input-state estimation for hysteretic systems and adaptive covariance selection"
+      ],
+      "name": "Teaha Kim",
+      "order": 1,
+      "photo": "assets/team-teaha-kim.png",
+      "photoAlt": "Teaha Kim",
+      "links": [],
+      "group": "alumni"
     },
     {
       "topics": [
